@@ -1,4 +1,5 @@
-#JavaEnterprise_Exam
+# JavaEnterprise_Exam
+
 [![Build Status](https://travis-ci.com/MiniMarker/JavaEnterprise_Exam.svg?token=63V1sLhHsu3poeGMykFw&branch=master)](https://travis-ci.com/MiniMarker/JavaEnterprise_Exam)
 
 * Student: Christian Marker
@@ -13,7 +14,7 @@ The project contains 3 submodules
 * frontend
 * reports
 
-##How to run code
+## How to run code
 
 1. Clone this repo
 2. Run from project root folder: 
