@@ -1,0 +1,4 @@
+no/cmarker/backend/entities/Person.class
+no/cmarker/backend/services/PersonService.class
+no/cmarker/backend/PasswordConfig.class
+no/cmarker/backend/services/DefaultDataInitializerService.class
