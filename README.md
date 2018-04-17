@@ -7,6 +7,8 @@
 
 This repo contains my solution for our 48-hour home exam.
 
+Published on Heroku: [Here](https://lit-headland-29494.herokuapp.com/)
+
 **Project Structure**
 
 The project contains 3 submodules
