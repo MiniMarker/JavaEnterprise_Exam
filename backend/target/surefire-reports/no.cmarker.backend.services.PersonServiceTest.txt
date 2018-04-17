@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: no.cmarker.backend.services.PersonServiceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.935 sec - in no.cmarker.backend.services.PersonServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.536 sec - in no.cmarker.backend.services.PersonServiceTest
