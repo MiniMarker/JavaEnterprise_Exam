@@ -88,7 +88,6 @@ public abstract class PageObject {
 			}
 			
 		});
-		
 		/*
 		//WebDriverWait - Didn't get this to work
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
@@ -98,6 +97,7 @@ public abstract class PageObject {
 		return wait.until((ExpectedCondition<Boolean>) input -> {
 			String res = jsExecutor.executeScript("return /loaded|complete/.test(document.readyState);").toString();
 			return Boolean.parseBoolean(res);
-		});*/
+		});
+		*/
 	}
 }

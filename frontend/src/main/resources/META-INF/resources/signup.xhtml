@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:sec="http://www.springframework.org/security/tags"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+>
+
+<ui:composition template="layout.xhtml">
+
+    <ui:define name="title">
+        SignUp
+    </ui:define>
+
+    <ui:define name="content">
+
+        <h1>Signup</h1>
+
+        <h:form prependId="false">
+            <div>
+                <h:outputLabel value="User and/or password are wrong."
+                               rendered="${!empty param['error']}"/>
+
+                <h:outputText value="Username: "/>
+                <h:inputText id="username" value="#{signUpController.username}" class="login"/><br/>
+                <h:outputText value="Password: "/>
+                <h:inputSecret id="password" value="#{signUpController.password}" class="login"/><br/>
+
+                <h:commandButton id="submit" value="Sign Up" action="#{signUpController.signUpUser}" class="gameBtn"/>
+            </div>
+        </h:form>
+
+    </ui:define>
+
+</ui:composition>
+
+</html>

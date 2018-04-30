@@ -126,7 +126,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>${version.springboot}</version>
 				<configuration>
-					<finalName>quizgame</finalName>
+					<finalName>exam-marchr16</finalName> <!-- quizgame -->
 					<classifier>exec</classifier>
 				</configuration>
 				<executions>
@@ -146,13 +146,13 @@
 					<artifactId>heroku-maven-plugin</artifactId>
 					<version>2.0.2</version>
 					<configuration>
-						<appName>quizgame-pg5100</appName>
+						<appName>exam-marchr16</appName> <!-- quizgame-pg5100 -->
 						<includeTarget>false</includeTarget>
 						<includes>
-							<include>target/quizgame-exec.jar</include>
+							<include>target/exam-marchr16-exex.jar</include> <!-- target/quizgame-exec.jar -->
 						</includes>
 						<processTypes>
-							<web>java -Dserver.port=$PORT -jar target/quizgame-exec.jar</web>
+							<web>java -Dserver.port=$PORT -jar target/exam-marchr16-exex.jar</web>
 						</processTypes>
 					</configuration>
 				</plugin>

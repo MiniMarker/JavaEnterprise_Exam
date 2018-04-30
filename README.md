@@ -13,7 +13,14 @@ Published on Heroku: [Here](https://lit-headland-29494.herokuapp.com/)
 
 The project contains 3 submodules
 * backend
+    * Entities
+    * Services
+    * ServiceTests
 * frontend
+    * Controllers
+    * WebSecurityConfig
+    * Selenium Tests
+    * Application Runner
 * reports
 
 ## How to run code

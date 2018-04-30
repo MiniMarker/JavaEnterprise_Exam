@@ -7,14 +7,19 @@
         xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
 >
 
-<head>
-    <title>Index</title>
-</head>
+<ui:composition template="layout.xhtml">
 
-<body>
-    <h1>Index</h1>
-    <a id="linkToPageTwo" href="pagetwo.xhtml">Click</a>
+    <ui:define name="title">
+        Index
+    </ui:define>
 
-</body>
+    <ui:define name="content">
+
+        <h1>Index</h1>
+        <a id="linkToPageTwo" href="pagetwo.xhtml">Click</a>
+
+    </ui:define>
+
+</ui:composition>
 
 </html>

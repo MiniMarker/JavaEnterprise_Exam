@@ -6,23 +6,28 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
 
 /**
  * @author Christian Marker on 16/04/2018 at 14:00.
  */
 @Service
 @Transactional
-<span class="fc" id="L15">public class PersonService {</span>
+<span class="fc" id="L16">public class PersonService {</span>
 	
 	@Autowired private EntityManager entityManager;
 	
 	public Integer createPerson(String name){
 		
-<span class="fc" id="L21">		Person entity = new Person();</span>
-<span class="fc" id="L22">		entity.setName(name);</span>
-<span class="fc" id="L23">		entityManager.persist(entity);</span>
+<span class="fc" id="L22">		Person entity = new Person();</span>
+<span class="fc" id="L23">		entity.setName(name);</span>
+<span class="fc" id="L24">		entityManager.persist(entity);</span>
 		
-<span class="fc" id="L25">		return entity.getId();</span>
+<span class="fc" id="L26">		return entity.getId();</span>
+	}
+	
+	public Person getPerson(Integer id){
+<span class="fc" id="L30">		return entityManager.find(Person.class, id);</span>
 	}
 	
 }

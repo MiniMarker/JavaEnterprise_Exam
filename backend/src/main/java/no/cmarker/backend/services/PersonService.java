@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
 
 /**
  * @author Christian Marker on 16/04/2018 at 14:00.
@@ -23,6 +24,10 @@ public class PersonService {
 		entityManager.persist(entity);
 		
 		return entity.getId();
+	}
+	
+	public Person getPerson(Integer id){
+		return entityManager.find(Person.class, id);
 	}
 	
 }
