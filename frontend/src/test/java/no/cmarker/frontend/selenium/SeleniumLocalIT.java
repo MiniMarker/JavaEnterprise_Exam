@@ -3,6 +3,7 @@ package no.cmarker.frontend.selenium;
 import no.cmarker.Application;
 import no.cmarker.frontend.selenium.po.IndexPO;
 import no.cmarker.frontend.selenium.po.PageTwoPO;
+import no.cmarker.frontend.selenium.po.SignUpPO;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +11,8 @@ import org.springframework.boot.context.embedded.LocalServerPort;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.junit.Assert.assertTrue;
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
@@ -25,6 +28,13 @@ public class SeleniumLocalIT {
 	@LocalServerPort private int port;
 	private static WebDriver driver;
 	private IndexPO home;
+	
+	private static final AtomicInteger counter = new AtomicInteger(0);
+	
+	private String getUniqueId(){
+		return "user_" + counter.getAndIncrement();
+	}
+	
 	
 	/*
 		BEFORE TESTS
@@ -83,6 +93,47 @@ public class SeleniumLocalIT {
 		home.toStartingPage();
 		assertTrue(home.isOnPage());
 	}
+	/*
+	@Test
+	public void testCreateUser() {
+		home.toStartingPage();
+		
+		SignUpPO signUpPO = home.goToSignUpPage();
+		assertTrue(signUpPO.isOnPage());
+		
+		String username = getUniqueId();
+		String password = "IShallPass!";
+		
+		signUpPO.createUser(username, password);
+		
+		assertTrue(home.isLoggedIn());
+		assertTrue(home.getDriver().getPageSource().contains(username));
+	}
+	
+	@Test
+	public void testCreateExistingUser(){
+		home.toStartingPage();
+		
+		SignUpPO signUpPO = home.goToSignUpPage();
+		assertTrue(signUpPO.isOnPage());
+		
+		String username = getUniqueId();
+		String password = "IShallPass!";
+		signUpPO.createUser(username, password);
+		
+		assertTrue(home.isLoggedIn());
+		assertTrue(home.getDriver().getPageSource().contains(username));
+		
+		home.logOut();
+		home.goToSignUpPage();
+		
+		assertTrue(signUpPO.isOnPage());
+		
+		signUpPO.createUser(username, password);
+		
+		assertTrue(signUpPO.isOnPage());
+		assertTrue(signUpPO.getDriver().getPageSource().contains("User and/or password are wrong."));
+	}
 	
 	@Test
 	public void goToPageTwo(){
@@ -91,7 +142,7 @@ public class SeleniumLocalIT {
 		PageTwoPO pageTwoPO = home.goToPageTwo();
 		
 		assertTrue(pageTwoPO.isOnPage());
-		
 	}
+	*/
 	
 }

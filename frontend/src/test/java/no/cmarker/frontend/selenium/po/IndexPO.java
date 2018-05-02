@@ -17,13 +17,18 @@ public class IndexPO extends LayoutPO {
 		super(driver, host, port);
 	}
 	
-	public void toStartingPage() {
-		getDriver().get(host + ":" + port);
-	}
-	
 	@Override
 	public boolean isOnPage() {
 		return getDriver().getTitle().contains("Index");
+	}
+	
+	public SignUpPO goToSignUpPage(){
+		
+		clickAndWait("linkToSignUp");
+		SignUpPO signUpPO = new SignUpPO(this);
+		assertTrue(signUpPO.isOnPage());
+		
+		return signUpPO;
 	}
 	
 	public PageTwoPO goToPageTwo() {

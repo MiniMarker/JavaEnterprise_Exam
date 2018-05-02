@@ -31,15 +31,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		return super.userDetailsServiceBean();
 	}
 	
-	
 	@Override
 	protected void configure(HttpSecurity http) {
 		try {
 			http.csrf().disable();
 			http.authorizeRequests()
-					.antMatchers("/", "/index.xhtml", "/pagetwo.xhtml", "/signup.xhtml", "/assets/**").permitAll()
+					.antMatchers("/", "/index.xhtml", "/signup.xhtml", "/assets/**").permitAll()
 					.antMatchers("/javax.faces.resource/**").permitAll()
-					.antMatchers("/ui/**").authenticated()
+					.antMatchers( "/pagetwo.xhtml").authenticated()
 					.anyRequest().authenticated()
 					.and()
 					.formLogin()
@@ -50,21 +49,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 					.and()
 					.logout()
 					.logoutSuccessUrl("/index.xhtml");
-			/*
-					.antMatchers("/", "/index.jsf", "/signup.jsf", "/assets/**").permitAll()
-                    .antMatchers("/javax.faces.resource/**").permitAll()
-                    .antMatchers("/ui/**").authenticated()
-                    .anyRequest().authenticated()
-                    .and()
-                    .formLogin()
-                    .loginPage("/login.jsf")
-                    .permitAll()
-                    .failureUrl("/login.jsf?error=true")
-                    .defaultSuccessUrl("/index.jsf")
-                    .and()
-                    .logout()
-                    .logoutSuccessUrl("/index.jsf");
-			 */
 					
 		} catch (Exception ex) {
 			throw new RuntimeException(ex);

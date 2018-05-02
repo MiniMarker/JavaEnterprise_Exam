@@ -1,5 +1,8 @@
 no/cmarker/backend/services/ResetService.class
 no/cmarker/backend/services/ServiceTestBase.class
+no/cmarker/backend/services/BookServiceTest.class
 no/cmarker/backend/StubApplication.class
+no/cmarker/backend/services/BookPostServiceTest.class
+no/cmarker/backend/services/UserServiceTest.class
 no/cmarker/backend/services/PersonServiceTest.class
 no/cmarker/backend/entities/TmpEntityTest.class

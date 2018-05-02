@@ -7,8 +7,6 @@
 
 This repo contains my solution for our 48-hour home exam.
 
-Published on Heroku: [Here](https://lit-headland-29494.herokuapp.com/)
-
 **Project Structure**
 
 The project contains 3 submodules
@@ -22,12 +20,17 @@ The project contains 3 submodules
     * Selenium Tests
     * Application Runner
 * reports
+    * JaCoCo coverage
+    * OWASP check
 
 ## How to run code
 
 1. Clone this repo
 2. Run from project root folder: 
-<br/> ```mvn install``` will install **with** running tests
-<br/> ```mvn install -DskipTests``` will install **without** running tests
+<br/> ```mvn install``` will install and generate reports **with** running tests
+<br/> ```mvn install -DskipTests``` will install and generate reports **without** running tests
 3. Run **LocalApplicationRunner** located in ~/frontend/src/test/java/no/cmarker/frontend/LocalApplicationRunner.java
-4. Open ```localhost:8080/index.jsf``` in your browser
+4. Open ```localhost:8080/``` in your browser
+
+To generate code reports after install:
+```mvn jacoco:report-aggregate```
