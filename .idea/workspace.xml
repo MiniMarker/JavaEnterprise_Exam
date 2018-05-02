@@ -5,61 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4b5287b-8765-4082-bb15-7dbe832efe49" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/MessageServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/book_details.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/BookPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/BookPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/BookPostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/BookPostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/DefaultDataInitializerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/DefaultDataInitializerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/PersonService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/BookServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/PersonServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/BookPostServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/BookPostServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/ResetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/ResetService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/ServiceTestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/ServiceTestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/UserServiceTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/backend-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/backend-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/no/cmarker/backend/entities/Person.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/classes/no/cmarker/backend/services/DefaultDataInitializerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/no/cmarker/backend/services/DefaultDataInitializerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/no/cmarker/backend/services/PersonService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/jacoco.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/site/jacoco/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/site/jacoco/jacoco.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/site/jacoco/jacoco.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.entities/Person.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.entities/Person.java.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.entities/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.entities/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.entities/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.entities/index.source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.services/DefaultDataInitializerService.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.services/DefaultDataInitializerService.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.services/DefaultDataInitializerService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.services/DefaultDataInitializerService.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.services/PersonService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.services/PersonService.java.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.services/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.services/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.services/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/site/jacoco/no.cmarker.backend.services/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/surefire-reports/TEST-no.cmarker.backend.services.PersonServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/surefire-reports/no.cmarker.backend.services.PersonServiceTest-output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/surefire-reports/no.cmarker.backend.services.PersonServiceTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/test-classes/no/cmarker/backend/services/PersonServiceTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/test-classes/no/cmarker/backend/services/ResetService.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/test-classes/no/cmarker/backend/services/ResetService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/test-classes/no/cmarker/backend/services/ServiceTestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/test-classes/no/cmarker/backend/services/ServiceTestBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/PersonController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/UserInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/book_details.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/book_details.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/index.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/layout.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/layout.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/pagetwo.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/pagetwo.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/classes/META-INF/resources/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/META-INF/resources/index.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/classes/META-INF/resources/layout.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/META-INF/resources/layout.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/target/classes/META-INF/resources/pagetwo.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/META-INF/resources/pagetwo.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/target/classes/no/cmarker/frontend/controller/PersonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/classes/no/cmarker/frontend/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/no/cmarker/frontend/WebSecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/failsafe-reports/TEST-no.cmarker.frontend.selenium.SeleniumLocalIT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/failsafe-reports/TEST-no.cmarker.frontend.selenium.SeleniumLocalIT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/failsafe-reports/no.cmarker.frontend.selenium.SeleniumLocalIT-output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/failsafe-reports/no.cmarker.frontend.selenium.SeleniumLocalIT-output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/failsafe-reports/no.cmarker.frontend.selenium.SeleniumLocalIT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/failsafe-reports/no.cmarker.frontend.selenium.SeleniumLocalIT.txt" afterDir="false" />
@@ -72,29 +55,29 @@
       <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/site/jacoco-it/jacoco-sessions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/site/jacoco-it/jacoco.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/site/jacoco-it/jacoco.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend.controller/PersonController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend.controller/PersonController.java.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend.controller/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend.controller/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend.controller/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend.controller/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend/WebSecurityConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend/WebSecurityConfig.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend/WebSecurityConfig.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend/WebSecurityConfig.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend/index.source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/dependency-check-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/dependency-check-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/reports-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/reports-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.entities/Person.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.entities/Person.java.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.entities/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.entities/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.entities/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.entities/index.source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.services/DefaultDataInitializerService.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.services/DefaultDataInitializerService.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.services/DefaultDataInitializerService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.services/DefaultDataInitializerService.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.services/PersonService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.services/PersonService.java.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.services/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.services/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.services/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.services/index.source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend.controller/PersonController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend.controller/PersonController.java.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend.controller/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend.controller/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend.controller/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend.controller/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend/WebSecurityConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend/WebSecurityConfig.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend/WebSecurityConfig.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend/WebSecurityConfig.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend/index.source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/jacoco-sessions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/jacoco.csv" afterDir="false" />
@@ -127,75 +110,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BookPostService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/BookPostService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1367#1368#0" expanded="true" />
-                <element signature="e#1408#1409#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BookPostController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+            <state relative-caret-position="438">
+              <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#1078#1079#0" expanded="true" />
+                <element signature="e#1127#1128#0" expanded="true" />
+                <element signature="e#1301#1302#0" expanded="true" />
+                <element signature="e#1365#1366#0" expanded="true" />
+                <element signature="e#1402#1403#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="64" column="112" selection-start-line="64" selection-start-column="112" selection-end-line="64" selection-end-column="112" />
+            <state relative-caret-position="286">
+              <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book_details.xhtml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/book_details.xhtml">
+      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+            <state relative-caret-position="308">
+              <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookPost.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/BookPost.java">
+      <file leaf-file-name="UserInfoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/UserInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="285">
+              <caret line="28" column="85" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/MessageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-132">
+              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexPO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/IndexPO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11">
-              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="15" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#716#717#0" expanded="true" />
-                <element signature="e#1022#1023#0" expanded="true" />
-                <element signature="e#1097#1098#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -222,7 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/src/main/resources/db/migration/V1.0_CREATE.sql" />
         <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/TmpController.java" />
         <option value="$PROJECT_DIR$/travis.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -235,7 +209,6 @@
         <option value="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/assets/style.css" />
         <option value="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/signup.xhtml" />
         <option value="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/login.xhtml" />
-        <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/UserInfoController.java" />
         <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/SeleniumTestBase.java" />
         <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/SeleniumTestBase.java" />
         <option value="$PROJECT_DIR$/backend/src/main/resources/db/migration/V1_0__Create.sql" />
@@ -248,31 +221,33 @@
         <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/LayoutPO.java" />
         <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/IndexPO.java" />
         <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/SignUpPO.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/BookService.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/BookPost.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Book.java" />
         <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/SignUpController.java" />
         <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/SeleniumLocalIT.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/BookPostService.java" />
-        <option value="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/BookPostServiceTest.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/MessageService.java" />
         <option value="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/UserServiceTest.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Message.java" />
-        <option value="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/ServiceTestBase.java" />
         <option value="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/pagetwo.xhtml" />
         <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/BookServiceTest.java" />
-        <option value="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/ResetService.java" />
         <option value="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/MessageServiceTest.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/User.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/UserService.java" />
         <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/DefaultDataInitializerService.java" />
         <option value="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/layout.xhtml" />
-        <option value="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/index.xhtml" />
-        <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java" />
-        <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java" />
         <option value="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/book_details.xhtml" />
+        <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/DefaultDataInitializerService.java" />
+        <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/UserInfoController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/User.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Message.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/BookPost.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Book.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/BookService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/MessageService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/UserService.java" />
+        <option value="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/ResetService.java" />
+        <option value="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/ServiceTestBase.java" />
+        <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/MessageController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/BookPostService.java" />
+        <option value="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/BookPostServiceTest.java" />
+        <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java" />
+        <option value="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/index.xhtml" />
       </list>
     </option>
   </component>
@@ -296,9 +271,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="840" />
     <option name="y" value="22" />
-    <option name="width" value="840" />
+    <option name="width" value="1680" />
     <option name="height" value="982" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -388,6 +362,48 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="migration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
@@ -557,7 +573,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LocalApplicationRunner">
+  <component name="RunManager" selected="JUnit.BookPostServiceTest.deleteBookPost">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -575,7 +591,7 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="BookServiceTest.testGetAllBooksWithMoreThenOnePost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookPostServiceTest.deleteBookPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="backend" />
       <extension name="coverage">
         <pattern>
@@ -586,8 +602,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="no.cmarker.backend.services" />
-      <option name="MAIN_CLASS_NAME" value="no.cmarker.backend.services.BookServiceTest" />
-      <option name="METHOD_NAME" value="testGetAllBooksWithMoreThenOnePost" />
+      <option name="MAIN_CLASS_NAME" value="no.cmarker.backend.services.BookPostServiceTest" />
+      <option name="METHOD_NAME" value="deleteBookPost" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -598,7 +614,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="MessageServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookPostServiceTest.testGetBookPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="backend" />
       <extension name="coverage">
         <pattern>
@@ -609,31 +625,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="no.cmarker.backend.services" />
-      <option name="MAIN_CLASS_NAME" value="no.cmarker.backend.services.MessageServiceTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="MessageServiceTest.testMarkMessageAsRead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="no.cmarker.backend.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="no.cmarker.backend.services" />
-      <option name="MAIN_CLASS_NAME" value="no.cmarker.backend.services.MessageServiceTest" />
-      <option name="METHOD_NAME" value="testMarkMessageAsRead" />
+      <option name="MAIN_CLASS_NAME" value="no.cmarker.backend.services.BookPostServiceTest" />
+      <option name="METHOD_NAME" value="testGetBookPost" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -651,6 +644,29 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="no.cmarker.backend.services in backend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.cmarker.backend.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="no.cmarker.backend.services" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -703,18 +719,18 @@
     <list>
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Application.LocalApplicationRunner" />
-      <item itemvalue="JUnit.BookServiceTest.testGetAllBooksWithMoreThenOnePost" />
-      <item itemvalue="JUnit.MessageServiceTest" />
-      <item itemvalue="JUnit.MessageServiceTest.testMarkMessageAsRead" />
       <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JUnit.BookPostServiceTest.testGetBookPost" />
+      <item itemvalue="JUnit.no.cmarker.backend.services in backend" />
+      <item itemvalue="JUnit.BookPostServiceTest.deleteBookPost" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookPostServiceTest.deleteBookPost" />
         <item itemvalue="Application.LocalApplicationRunner" />
+        <item itemvalue="JUnit.no.cmarker.backend.services in backend" />
+        <item itemvalue="JUnit.BookPostServiceTest.testGetBookPost" />
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="JUnit.MessageServiceTest" />
-        <item itemvalue="JUnit.MessageServiceTest.testMarkMessageAsRead" />
-        <item itemvalue="JUnit.BookServiceTest.testGetAllBooksWithMoreThenOnePost" />
       </list>
     </recent_temporary>
   </component>
@@ -743,44 +759,44 @@
       <workItem from="1525207187021" duration="6358000" />
       <workItem from="1525254692766" duration="7000" />
       <workItem from="1525256805569" duration="13701000" />
-      <workItem from="1525271186356" duration="11351000" />
+      <workItem from="1525271186356" duration="28577000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookServiceTest_testGetAllBooksWithMoreThenOnePost - 2018.05.02 at 17h 56m 25s.xml">
-      <configuration name="BookServiceTest.testGetAllBooksWithMoreThenOnePost" configurationId="JUnit" />
+    <history-entry file="no_cmarker_backend_services_in_backend - 2018.05.03 at 00h 19m 57s.xml">
+      <configuration name="no.cmarker.backend.services in backend" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MessageServiceTest - 2018.05.02 at 18h 05m 31s.xml">
-      <configuration name="MessageServiceTest" configurationId="JUnit" />
+    <history-entry file="no_cmarker_backend_services_in_backend - 2018.05.03 at 00h 21m 03s.xml">
+      <configuration name="no.cmarker.backend.services in backend" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MessageServiceTest - 2018.05.02 at 18h 07m 11s.xml">
-      <configuration name="MessageServiceTest" configurationId="JUnit" />
+    <history-entry file="no_cmarker_backend_services_in_backend - 2018.05.03 at 00h 24m 07s.xml">
+      <configuration name="no.cmarker.backend.services in backend" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MessageServiceTest - 2018.05.02 at 18h 08m 21s.xml">
-      <configuration name="MessageServiceTest" configurationId="JUnit" />
+    <history-entry file="no_cmarker_backend_services_in_backend - 2018.05.03 at 00h 25m 42s.xml">
+      <configuration name="no.cmarker.backend.services in backend" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MessageServiceTest_testMarkMessageAsRead - 2018.05.02 at 18h 12m 15s.xml">
-      <configuration name="MessageServiceTest.testMarkMessageAsRead" configurationId="JUnit" />
+    <history-entry file="no_cmarker_backend_services_in_backend - 2018.05.03 at 00h 31m 16s.xml">
+      <configuration name="no.cmarker.backend.services in backend" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MessageServiceTest_testMarkMessageAsRead - 2018.05.02 at 18h 13m 07s.xml">
-      <configuration name="MessageServiceTest.testMarkMessageAsRead" configurationId="JUnit" />
+    <history-entry file="no_cmarker_backend_services_in_backend - 2018.05.03 at 00h 33m 54s.xml">
+      <configuration name="no.cmarker.backend.services in backend" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MessageServiceTest - 2018.05.02 at 18h 13m 25s.xml">
-      <configuration name="MessageServiceTest" configurationId="JUnit" />
+    <history-entry file="BookPostServiceTest_deleteBookPost - 2018.05.03 at 00h 42m 10s.xml">
+      <configuration name="BookPostServiceTest.deleteBookPost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MessageServiceTest - 2018.05.02 at 18h 16m 19s.xml">
-      <configuration name="MessageServiceTest" configurationId="JUnit" />
+    <history-entry file="BookPostServiceTest_deleteBookPost - 2018.05.03 at 00h 42m 27s.xml">
+      <configuration name="BookPostServiceTest.deleteBookPost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MessageServiceTest - 2018.05.02 at 18h 18m 17s.xml">
-      <configuration name="MessageServiceTest" configurationId="JUnit" />
+    <history-entry file="BookPostServiceTest_deleteBookPost - 2018.05.03 at 00h 43m 16s.xml">
+      <configuration name="BookPostServiceTest.deleteBookPost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MessageServiceTest - 2018.05.02 at 18h 20m 18s.xml">
-      <configuration name="MessageServiceTest" configurationId="JUnit" />
+    <history-entry file="BookPostServiceTest_deleteBookPost - 2018.05.03 at 00h 43m 41s.xml">
+      <configuration name="BookPostServiceTest.deleteBookPost" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84276000" />
+    <option name="totallyTimeSpent" value="101502000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -808,7 +824,7 @@
       <window_info anchor="right" id="JSF" order="5" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39907193" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32946634" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49874687" weight="0.32946634" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -823,7 +839,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18009768" />
       <window_info anchor="right" id="Bean Validation" order="10" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32946634" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -841,17 +857,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1083,17 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/IndexPO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/PageTwoPO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1177,96 +1175,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/BookPostServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="20" selection-start-line="20" selection-end-line="22" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/UserInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/SignUpController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-227">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/ServiceTestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#340#341#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/MessageServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/MessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="57" column="38" lean-forward="true" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1567#1568#0" expanded="true" />
-            <element signature="e#1607#1608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/BookServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="80" column="45" lean-forward="true" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/ResetService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1279,30 +1191,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/layout.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+        <state relative-caret-position="165">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/DefaultDataInitializerService.java">
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/book_details.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        <state relative-caret-position="249">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/UserService.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/MessageServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="59" column="30" lean-forward="true" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+        <state relative-caret-position="345">
+          <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/BookServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="80" column="45" lean-forward="true" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#1596#1597#0" expanded="true" />
+            <element signature="e#1624#1625#0" expanded="true" />
+            <element signature="e#1680#1681#0" expanded="true" />
+            <element signature="e#1723#1724#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="104" column="35" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
+        <state relative-caret-position="410">
+          <caret line="43" column="61" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
           <folding>
+            <element signature="e#1972#1973#0" expanded="true" />
             <element signature="e#1991#1992#0" expanded="true" />
             <element signature="e#2036#2037#0" expanded="true" />
             <element signature="e#2061#2062#0" expanded="true" />
@@ -1310,53 +1254,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/BookService.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/BookPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        <state relative-caret-position="255">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/ServiceTestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding>
             <element signature="e#809#810#0" expanded="true" />
             <element signature="e#846#847#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/ResetService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/DefaultDataInitializerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="35" column="48" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/IndexPO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="38" column="90" selection-start-line="38" selection-start-column="90" selection-end-line="38" selection-end-column="90" />
+        <state relative-caret-position="308">
+          <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java">
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/UserInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#1022#1023#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="28" column="85" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/BookPost.java">
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/MessageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-132">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/BookPostService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+        <state relative-caret-position="397">
+          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1367#1368#0" expanded="true" />
@@ -1365,29 +1388,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java">
+    <entry file="file://$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/BookPostServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+        <state relative-caret-position="393">
+          <caret line="107" column="62" selection-start-line="107" selection-start-column="62" selection-end-line="107" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1301#1302#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1402#1403#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="64" column="112" selection-start-line="64" selection-start-column="112" selection-end-line="64" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/book_details.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+        <state relative-caret-position="286">
+          <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
         </state>
       </provider>
     </entry>

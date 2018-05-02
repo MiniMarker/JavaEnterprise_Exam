@@ -18,11 +18,11 @@ public class Message {
 	private Long id;
 	
 	@NotNull
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.ALL)
 	private User sender;
 	
 	@NotNull
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.ALL)
 	private User reciever;
 	
 	@NotNull

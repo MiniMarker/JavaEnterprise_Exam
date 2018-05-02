@@ -18,18 +18,44 @@ import java.util.function.Supplier;
 	@Autowired
 	private BookService bookService;
 	
+	@Autowired
+	private BookPostService bookPostService;
+	
+	@Autowired
+	private UserService userService;
+	
+	@Autowired
+	private MessageService messageService;
+	
 	@PostConstruct
 	public void initialize(){
 		
-<span class="fc" id="L24">		Long book1Id = attempt(() -&gt; bookService.createBook(&quot;The hitchhikers guide to the galaxy&quot;, &quot;Douglas Adams&quot;, &quot;PG5100&quot;));</span>
+<span class="fc" id="L33">		String userName1 = &quot;Frodo123&quot;;</span>
+<span class="fc" id="L34">		String userName2 = &quot;Bilbo90&quot;;</span>
 		
-<span class="fc" id="L26">	}</span>
+<span class="fc" id="L36">		userService.createUser(userName1, &quot;Shire&quot;, &quot;Frodo&quot;, &quot;Baggins&quot;);</span>
+<span class="fc" id="L37">		userService.createUser(userName2, &quot;Mordor&quot;, &quot;Bilbo&quot;, &quot;Baggins&quot;);</span>
+		
+<span class="fc" id="L39">		Long book1Id = attempt(() -&gt; bookService.createBook(&quot;The hitchhikers guide to the galaxy&quot;, &quot;Douglas Adams&quot;, &quot;PG5100&quot;));</span>
+<span class="fc" id="L40">		Long book2Id = attempt(() -&gt; bookService.createBook(&quot;Dirk Gently&quot;, &quot;Douglas Adams&quot;, &quot;PG5100&quot;));</span>
+		
+<span class="fc" id="L42">		Long bookPost1Id = attempt(() -&gt; bookPostService.createBookPost(userName1, book1Id));</span>
+<span class="fc" id="L43">		Long bookPost2Id = attempt(() -&gt; bookPostService.createBookPost(userName2, book1Id));</span>
+<span class="fc" id="L44">		Long bookPost3Id = attempt(() -&gt; bookPostService.createBookPost(userName1, book2Id));</span>
+<span class="fc" id="L45">		Long bookPost4Id = attempt(() -&gt; bookPostService.createBookPost(userName2, book2Id));</span>
+		
+<span class="fc" id="L47">		Long message1Id = attempt(() -&gt; messageService.createMessage(userName2, userName1, &quot;Hello!&quot;));</span>
+<span class="fc" id="L48">		Long message2Id = attempt(() -&gt; messageService.createMessage(userName2, userName1, &quot;I'm going on an adventure!&quot;));</span>
+<span class="fc" id="L49">		Long message3Id = attempt(() -&gt; messageService.createMessage(userName1, userName2, &quot;Wait for me&quot;));</span>
+<span class="fc" id="L50">		Long message4Id = attempt(() -&gt; messageService.createMessage(userName1, userName2, &quot;I want to join&quot;));</span>
+		
+<span class="fc" id="L52">	}</span>
 	
 	private &lt;T&gt; T attempt(Supplier&lt;T&gt; lambda) {
 		try {
-<span class="fc" id="L30">			return lambda.get();</span>
-<span class="nc" id="L31">		} catch (Exception e) {</span>
-<span class="nc" id="L32">			return null;</span>
+<span class="fc" id="L56">			return lambda.get();</span>
+<span class="nc" id="L57">		} catch (Exception e) {</span>
+<span class="nc" id="L58">			return null;</span>
 		}
 	}
 }

@@ -14,12 +14,16 @@ import javax.inject.Named;
 public class MessageController {
 	
 	@Autowired
+	public UserInfoController userInfoController;
+	
+	@Autowired
 	public MessageService messageService;
+	
+	@Autowired
+	public BookController bookController;
 	
 	private boolean showInputField = false;
 	private String messageText;
-	
-	
 	
 	public String getMessageText() {
 		return messageText;
@@ -27,6 +31,16 @@ public class MessageController {
 	
 	public void setMessageText(String messageText) {
 		this.messageText = messageText;
+	}
+	
+	public String sendMessage(String recieverUsername){
+		String loggedInUsername = userInfoController.getUserName();
+		messageService.createMessage(loggedInUsername, recieverUsername, messageText);
+		return "?faces-redirect=true&amp;includeViewParams=true";
+	}
+	
+	public void markMessageAsRead(long id){
+		messageService.markMessageAsRead(id);
 	}
 	
 	public boolean isShowInputField() {

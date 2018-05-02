@@ -1,6 +1,8 @@
+no/cmarker/frontend/controller/MessageController.class
 no/cmarker/frontend/controller/SignUpController.class
 no/cmarker/frontend/controller/BookController.class
 no/cmarker/frontend/controller/UserInfoController.class
 no/cmarker/frontend/WebSecurityConfig.class
+no/cmarker/frontend/controller/BookPostController.class
 no/cmarker/frontend/RedirectForwardHandler.class
 no/cmarker/Application.class

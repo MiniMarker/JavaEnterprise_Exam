@@ -21,16 +21,27 @@ public class ResetService {
 
 	@PersistenceContext
 	private EntityManager em;
+	
+	
 
 	public void resetDatabase(){
+		Query query = em.createNativeQuery("delete from user_roles");
+		query.executeUpdate();
+		
 		deleteEntity(BookPost.class);
 		deleteEntity(Book.class);
 		deleteEntity(Message.class);
 		deleteEntity(User.class);
 		
 	}
+	
+	public void deleteEntityById(Class<?> entity, Object id){
+		Object obj = em.find(entity, id);
+		em.joinTransaction();
+		em.remove(obj);
+	}
 
-	private void deleteEntity(Class<?> entity){
+	protected void deleteEntity(Class<?> entity){
 
 		if (entity == null || entity.getAnnotation(Entity.class) == null){
 			throw new IllegalArgumentException("Invalid non-entity class");

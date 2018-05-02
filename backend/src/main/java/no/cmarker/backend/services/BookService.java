@@ -1,7 +1,6 @@
 package no.cmarker.backend.services;
 
 import no.cmarker.backend.entities.Book;
-import no.cmarker.backend.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

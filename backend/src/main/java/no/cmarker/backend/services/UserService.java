@@ -1,6 +1,5 @@
 package no.cmarker.backend.services;
 
-import no.cmarker.backend.entities.Book;
 import no.cmarker.backend.entities.Message;
 import no.cmarker.backend.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;

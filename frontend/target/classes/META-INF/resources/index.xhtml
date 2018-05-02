@@ -7,6 +7,7 @@
         xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
         xmlns:f="http://java.sun.com/jsf/core"
         xmlns:sec="http://www.springframework.org/security/tags"
+        xmlns:p="http://primefaces.org/ui"
 >
 
 <ui:composition template="layout.xhtml">
@@ -43,6 +44,7 @@
             <p><b>Log in add books</b></p>
         </sec:anonymous>
 
+        <h2>Books</h2>
         <h:dataTable var="book" value="${bookController.allBooks}" border="1" id="bookTable">
             <h:column>
                 <f:facet name="header">Title</f:facet>
@@ -62,14 +64,80 @@
             </h:column>
             <h:column>
                 <h:form>
-                    <h:commandButton value="Do to details" action="#{bookController.selectBook(book.getId())}"/>
+                    <h:commandButton value="Go to details" action="#{bookController.selectBook(book.getId())}"/>
+                </h:form>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Are you selling this book?</f:facet>
+                <h:form>
+                    <!--
+                    TODO Fix tomorrow!
+                    <h:selectOneRadio value="#{bookPostController.bookPostMap[book.id]}"
+                                      onclick="submit()"
+                                      valueChangeListener="#{bookPostController.updateBookPost()}">
+                        <f:attribute name="bookPostId" value="#{book.id}" />
+                        <f:selectItem itemValue="true" itemLabel="Yes" />
+                        <f:selectItem itemValue="false" itemLabel="No" />
+                    </h:selectOneRadio>
+                    -->
                 </h:form>
             </h:column>
 
         </h:dataTable>
 
-    </ui:define>
+        <sec:anonymous>
+            <p><b>Log in see your inbox and sent messages</b></p>
+        </sec:anonymous>
 
+        <sec:authenticated>
+            <h2>Inbox</h2>
+            <h:dataTable var="message" value="#{userInfoController.inbox}">
+                <h:column>
+                    <f:facet name="header">From</f:facet>
+                    <h:outputLabel value="${message.sender.firstname} ${message.sender.lastname}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Message</f:facet>
+                    <h:outputLabel value="${message.message}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Date</f:facet>
+                    <h:outputLabel value="${message.date}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Read</f:facet>
+                    <h:outputLabel value="${message.read}"/>
+                </h:column>
+                <h:column>
+                    <h:form>
+                        <h:commandButton value="Mark as read"
+                                         action="#{messageController.markMessageAsRead(message.id)}"/>
+                    </h:form>
+                </h:column>
+            </h:dataTable>
+
+            <h2>Sent</h2>
+            <h:dataTable var="message" value="#{userInfoController.outbox}">
+                <h:column>
+                    <f:facet name="header">To</f:facet>
+                    <h:outputLabel value="${message.reciever.firstname} ${message.reciever.lastname}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Message</f:facet>
+                    <h:outputLabel value="${message.message}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Date</f:facet>
+                    <h:outputLabel value="${message.date}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Read</f:facet>
+                    <h:outputLabel value="${message.read}"/>
+                </h:column>
+            </h:dataTable>
+        </sec:authenticated>
+
+    </ui:define>
 </ui:composition>
 
 </html>

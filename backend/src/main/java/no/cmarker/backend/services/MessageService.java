@@ -7,9 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
-import javax.persistence.TypedQuery;
 import java.time.LocalDate;
-import java.util.List;
 
 /**
  * @author Christian Marker on 02/05/2018 at 13:15.
@@ -52,7 +50,6 @@ public class MessageService {
 	public void markMessageAsRead(long id){
 		Message message = getMessage(id);
 		message.setRead(true);
-		
 	}
 	
 	public Message getMessage(long id){

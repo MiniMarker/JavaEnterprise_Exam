@@ -24,17 +24,30 @@ public class DefaultDataInitializerService {
 	@Autowired
 	private UserService userService;
 	
+	@Autowired
+	private MessageService messageService;
+	
 	@PostConstruct
 	public void initialize(){
 		
-		String userName = "Frodo123";
+		String userName1 = "Frodo123";
+		String userName2 = "Bilbo90";
 		
-		userService.createUser(userName, "Shire", "Frodo", "Baggins");
+		userService.createUser(userName1, "Shire", "Frodo", "Baggins");
+		userService.createUser(userName2, "Mordor", "Bilbo", "Baggins");
 		
 		Long book1Id = attempt(() -> bookService.createBook("The hitchhikers guide to the galaxy", "Douglas Adams", "PG5100"));
-		Long book2Id = attempt(() -> bookService.createBook("The hitchhikers guide to the galaxy", "Douglas Adams", "PG5100"));
+		Long book2Id = attempt(() -> bookService.createBook("Dirk Gently", "Douglas Adams", "PG5100"));
 		
-		Long bookPost1Id = attempt(() -> bookPostService.createBookPost(userName, book1Id));
+		Long bookPost1Id = attempt(() -> bookPostService.createBookPost(userName1, book1Id));
+		Long bookPost2Id = attempt(() -> bookPostService.createBookPost(userName2, book1Id));
+		Long bookPost3Id = attempt(() -> bookPostService.createBookPost(userName1, book2Id));
+		Long bookPost4Id = attempt(() -> bookPostService.createBookPost(userName2, book2Id));
+		
+		Long message1Id = attempt(() -> messageService.createMessage(userName2, userName1, "Hello!"));
+		Long message2Id = attempt(() -> messageService.createMessage(userName2, userName1, "I'm going on an adventure!"));
+		Long message3Id = attempt(() -> messageService.createMessage(userName1, userName2, "Wait for me"));
+		Long message4Id = attempt(() -> messageService.createMessage(userName1, userName2, "I want to join"));
 		
 	}
 	

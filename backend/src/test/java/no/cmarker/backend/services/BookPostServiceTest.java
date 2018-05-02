@@ -91,4 +91,20 @@ public class BookPostServiceTest extends ServiceTestBase {
 		bookPostService.unmarkBookPostAsSellable(bookPostId);
 		assertFalse(bookPostService.getBookPost(bookPostId).isForSale());
 	}
+	
+	@Test
+	public void deleteBookPost(){
+		String userName = "Foo";
+		String bookTitle = "LOTR";
+		
+		userService.createUser(userName, "Bar", "foo", "bar");
+		Long bookId = bookService.createBook(bookTitle, "Tolkien", "PG5100");
+		Long bookPostId = bookPostService.createBookPost(userName, bookId);
+		
+		assertEquals(1, bookPostService.getAllBookPosts(bookId).size());
+		
+		bookPostService.deleteBookPost(bookPostId);
+		
+		assertEquals(0, bookPostService.getAllBookPosts(bookId).size());
+	}
 }

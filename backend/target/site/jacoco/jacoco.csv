@@ -3,9 +3,9 @@ backend,no.cmarker.backend,PasswordConfig,0,7,0,0,0,2,0,2,0,2
 backend,no.cmarker.backend.entities,Book,14,29,0,0,6,12,4,7,4,7
 backend,no.cmarker.backend.entities,BookPost,7,24,0,0,3,11,2,7,2,7
 backend,no.cmarker.backend.entities,Message,16,29,0,0,6,13,5,8,5,8
-backend,no.cmarker.backend.entities,User,23,39,0,0,9,15,7,8,7,8
+backend,no.cmarker.backend.entities,User,26,43,0,0,10,17,8,9,8,9
 backend,no.cmarker.backend.services,BookService,2,61,1,1,1,16,1,6,0,6
-backend,no.cmarker.backend.services,UserService,2,74,1,1,1,18,1,4,0,4
-backend,no.cmarker.backend.services,DefaultDataInitializerService,3,20,0,0,2,4,0,4,0,4
-backend,no.cmarker.backend.services,BookPostService,24,92,2,2,2,22,2,6,0,6
+backend,no.cmarker.backend.services,UserService,2,78,1,1,1,19,1,4,0,4
+backend,no.cmarker.backend.services,DefaultDataInitializerService,3,173,0,0,2,17,0,13,0,13
+backend,no.cmarker.backend.services,BookPostService,26,104,3,3,3,26,3,7,0,7
 backend,no.cmarker.backend.services,MessageService,24,73,2,2,2,19,2,4,0,4

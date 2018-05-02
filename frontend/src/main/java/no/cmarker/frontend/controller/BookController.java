@@ -20,6 +20,8 @@ public class BookController {
 	public String addBookAuthor;
 	public String addBookCourse;
 	
+	private long selectedBookId;
+	
 	@Autowired
 	private BookService bookService;
 	
@@ -36,11 +38,10 @@ public class BookController {
 		return bookService.getBook(Long.parseLong(id));
 	}
 	
+	
 	public String selectBook(long bookId){
 		return "book_details.xhtml?book=" + bookId + "&faces-redirect=true";
 	}
-	
-	
 	
 	
 	public String getAddBookTitle() {
@@ -65,5 +66,13 @@ public class BookController {
 	
 	public void setAddBookCourse(String addBookCourse) {
 		this.addBookCourse = addBookCourse;
+	}
+	
+	public long getSelectedBookId() {
+		return selectedBookId;
+	}
+	
+	public void setSelectedBookId(long selectedBookId) {
+		this.selectedBookId = selectedBookId;
 	}
 }

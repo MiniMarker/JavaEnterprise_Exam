@@ -46,11 +46,18 @@ public class BookPostService {
 	}
 	
 	public void unmarkBookPostAsSellable(long id){
-		
+		BookPost bookPost = getBookPost(id);
+		bookPost.setForSale(false);
+	}
+	
+	public boolean deleteBookPost(long id){
 		BookPost bookPost = getBookPost(id);
 		
-		bookPost.setForSale(false);
-		
+		if (bookPost != null){
+			em.remove(bookPost);
+			return true;
+		}
+		return false;
 	}
 	
 	public BookPost getBookPost(long id){

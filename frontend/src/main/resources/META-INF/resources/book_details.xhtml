@@ -5,9 +5,10 @@
         xmlns:sec="http://www.springframework.org/security/tags"
         xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
         xmlns:c="http://xmlns.jcp.org/jsp/jstl/core" xmlns:f="http://java.sun.com/jsf/core"
->
+        xmlns:o="http://omnifaces.org/ui">
 
 <ui:composition template="layout.xhtml">
+
 
     <ui:define name="title">BookDetails</ui:define>
 
@@ -15,6 +16,10 @@
 
         <c:set var="book" value="#{bookController.getBook(param['book'])}"/>
         <c:set var="bookPostList" value="#{bookPostController.getAllBookPosts(param['book'])}"/>
+
+        <f:metadata>
+            <f:viewParam name="bookid" value="#{book.id}"/>
+        </f:metadata>
 
         <h1>${book.title}</h1>
 
@@ -27,25 +32,18 @@
                 <f:facet name="header">For sale</f:facet>
                 <h:outputLabel value="${post.isForSale()}"/>
             </h:column>
-            <h:column>
-                <f:facet name="header">Action</f:facet>
-                <h:form>
-                    <h:commandButton value="contact seller" action="#{messageController.setShowInputField(true)}"/>
-                </h:form>
 
-                <c:if test="#{messageController.showInputField}">
-                    <h:form>
-                        <p>Message:</p>
-                        <h:inputTextarea value="#{messageController.messageText}"/>
-                        <h:commandButton value="Send"/>
-
+            <sec:authenticated>
+                <h:column>
+                    <f:facet name="header">Contact seller</f:facet>
+                    <h:form includeViewParams="true">
+                        <h:inputText value="#{messageController.messageText}"/>
+                        <h:commandButton action="${messageController.sendMessage(post.seller.username)}" value="Send"/>
                     </h:form>
+                </h:column>
+            </sec:authenticated>
 
-                </c:if>
-
-            </h:column>
         </h:dataTable>
-
     </ui:define>
 
 </ui:composition>
