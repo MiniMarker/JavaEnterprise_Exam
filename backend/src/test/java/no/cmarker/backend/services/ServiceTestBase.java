@@ -11,7 +11,7 @@ public class ServiceTestBase {
 	@Autowired private ResetService resetService;
 
 	@Before
-	public void clanDatabase(){
+	public void cleanDatabase(){
 		resetService.resetDatabase();
 	}
 }

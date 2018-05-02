@@ -26,11 +26,11 @@ public class MessageService {
 		User sender = em.find(User.class, senderUsername);
 		User receiver = em.find(User.class, receiverUsername);
 		
-		if (sender == null ){
+		if (sender == null){
 			throw new IllegalArgumentException("Could not find user: " + senderUsername);
 		}
 		
-		if (receiver == null ){
+		if (receiver == null){
 			throw new IllegalArgumentException("Could not find user: " + receiverUsername);
 		}
 		
@@ -50,9 +50,7 @@ public class MessageService {
 	}
 	
 	public void markMessageAsRead(long id){
-		
 		Message message = getMessage(id);
-		
 		message.setRead(true);
 		
 	}
@@ -60,21 +58,4 @@ public class MessageService {
 	public Message getMessage(long id){
 		return em.find(Message.class, id);
 	}
-	
-	public List<Message> getInbox(String username){
-		
-		TypedQuery<Message> query = em.createQuery("SELECT m FROM Message m WHERE m.reciever.username = ?1", Message.class);
-		query.setParameter(1, username);
-		
-		return query.getResultList();
-	}
-	
-	public List<Message> getOutbo(String username){
-		
-		TypedQuery<Message> query = em.createQuery("SELECT m FROM Message m WHERE m.reciever.username = ?1", Message.class);
-		query.setParameter(1, username);
-		
-		return query.getResultList();
-	}
-	
 }

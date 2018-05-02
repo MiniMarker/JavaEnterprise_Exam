@@ -27,6 +27,9 @@ public class User {
 	@NotNull
 	private Boolean enabled;
 	
+	@ElementCollection(fetch = FetchType.EAGER)
+	private Set<String> roles;
+	
 	@NotBlank
 	@Size(max = 62)
 	private String firstname;
@@ -35,16 +38,13 @@ public class User {
 	@Size(max = 62)
 	private String lastname;
 	
-	@OneToMany
-	private List<Message> inbox;
+	@OneToMany(mappedBy = "reciever", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private List<Message> inbox = new ArrayList<>();
 	
-	@OneToMany
-	private List<Message> outbox;
+	@OneToMany(mappedBy = "sender", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private List<Message> outbox = new ArrayList<>();
 	
-	public User() {
-		inbox = new ArrayList<>();
-		outbox = new ArrayList<>();
-	}
+	public User() {}
 	
 	public String getUsername() {
 		return username;
@@ -100,5 +100,13 @@ public class User {
 	
 	public void setOutbox(List<Message> outbox) {
 		this.outbox = outbox;
+	}
+	
+	public Set<String> getRoles() {
+		return roles;
+	}
+	
+	public void setRoles(Set<String> roles) {
+		this.roles = roles;
 	}
 }

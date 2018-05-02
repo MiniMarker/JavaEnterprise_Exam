@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: no.cmarker.frontend.selenium.SeleniumLocalIT
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.612 sec - in no.cmarker.frontend.selenium.SeleniumLocalIT
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.726 sec - in no.cmarker.frontend.selenium.SeleniumLocalIT

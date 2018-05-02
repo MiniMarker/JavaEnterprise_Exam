@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:sec="http://www.springframework.org/security/tags"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:c="http://xmlns.jcp.org/jsp/jstl/core" xmlns:f="http://java.sun.com/jsf/core"
+>
+
+<ui:composition template="layout.xhtml">
+
+    <ui:define name="title">BookDetails</ui:define>
+
+    <ui:define name="content">
+
+        <c:set var="book" value="#{bookController.getBook(param['book'])}"/>
+        <c:set var="bookPostList" value="#{bookPostController.getAllBookPosts(param['book'])}"/>
+
+        <h1>${book.title}</h1>
+
+        <h:dataTable var="post" value="#{bookPostList}">
+            <h:column>
+                <f:facet name="header">Seller</f:facet>
+                <h:outputLabel value="${post.seller.firstname} ${post.seller.lastname}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">For sale</f:facet>
+                <h:outputLabel value="${post.isForSale()}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Action</f:facet>
+                <h:form>
+                    <h:commandButton value="contact seller" action="#{messageController.setShowInputField(true)}"/>
+                </h:form>
+
+                <c:if test="#{messageController.showInputField}">
+                    <h:form>
+                        <p>Message:</p>
+                        <h:inputTextarea value="#{messageController.messageText}"/>
+                        <h:commandButton value="Send"/>
+
+                    </h:form>
+
+                </c:if>
+
+            </h:column>
+        </h:dataTable>
+
+    </ui:define>
+
+</ui:composition>
+
+</html>

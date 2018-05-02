@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../jacoco-resources/report.gif" type="image/gif"/><title>DefaultDataInitializerService.java</title><link rel="stylesheet" href="../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../index.html" class="el_report">reports</a> &gt; <a href="../index.html" class="el_bundle">backend</a> &gt; <a href="index.source.html" class="el_package">no.cmarker.backend.services</a> &gt; <span class="el_source">DefaultDataInitializerService.java</span></div><h1>DefaultDataInitializerService.java</h1><pre class="source lang-java linenums">package no.cmarker.backend.services;
 
+import no.cmarker.backend.entities.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,22 +13,23 @@ import java.util.function.Supplier;
  */
 
 @Service
-<span class="fc" id="L15">public class DefaultDataInitializerService {</span>
+<span class="fc" id="L16">public class DefaultDataInitializerService {</span>
 	
 	@Autowired
-	private PersonService personService;
+	private BookService bookService;
 	
 	@PostConstruct
 	public void initialize(){
-<span class="fc" id="L22">		Integer id1 = attempt(() -&gt; personService.createPerson(&quot;Ola&quot;));</span>
 		
-<span class="fc" id="L24">	}</span>
+<span class="fc" id="L24">		Long book1Id = attempt(() -&gt; bookService.createBook(&quot;The hitchhikers guide to the galaxy&quot;, &quot;Douglas Adams&quot;, &quot;PG5100&quot;));</span>
+		
+<span class="fc" id="L26">	}</span>
 	
 	private &lt;T&gt; T attempt(Supplier&lt;T&gt; lambda) {
 		try {
-<span class="fc" id="L28">			return lambda.get();</span>
-<span class="nc" id="L29">		} catch (Exception e) {</span>
-<span class="nc" id="L30">			return null;</span>
+<span class="fc" id="L30">			return lambda.get();</span>
+<span class="nc" id="L31">		} catch (Exception e) {</span>
+<span class="nc" id="L32">			return null;</span>
 		}
 	}
 }

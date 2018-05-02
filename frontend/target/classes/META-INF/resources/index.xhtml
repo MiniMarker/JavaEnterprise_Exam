@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html
+        xmlns="http://www.w3.org/1999/xhtml"
         xmlns:h="http://xmlns.jcp.org/jsf/html"
-        xmlns:sec="http://www.springframework.org/security/tags"
         xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
         xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:sec="http://www.springframework.org/security/tags"
 >
 
 <ui:composition template="layout.xhtml">
@@ -13,10 +15,58 @@
         Index
     </ui:define>
 
+    <c:set var="bookList" value="${bookController.allBooks}"/>
+    <c:set var="bookPostList" value="${bookController.allBooks}"/>
+
     <ui:define name="content">
 
         <h1>Index</h1>
-        <a id="linkToPageTwo" href="pagetwo.xhtml">Click</a>
+
+        <c:choose>
+
+            <c:when test="${bookList.size() == 0}">
+                <p><b>No Books available</b></p>
+            </c:when>
+
+        </c:choose>
+
+        <sec:authenticated>
+            <h:form>
+                <h:inputText value="#{bookController.addBookTitle}"/>
+                <h:inputText value="#{bookController.addBookAuthor}"/>
+                <h:inputText value="#{bookController.addBookCourse}"/>
+                <h:commandButton action="#{bookController.createBook}"/>
+            </h:form>
+        </sec:authenticated>
+
+        <sec:anonymous>
+            <p><b>Log in add books</b></p>
+        </sec:anonymous>
+
+        <h:dataTable var="book" value="${bookController.allBooks}" border="1" id="bookTable">
+            <h:column>
+                <f:facet name="header">Title</f:facet>
+                <h:outputLabel class="bookTitle" value="${book.title}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Author</f:facet>
+                <h:outputLabel value="${book.author}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Course</f:facet>
+                <h:outputLabel value="${book.course}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Number of sellers</f:facet>
+                <h:outputLabel value="${book.bookPosts.size()}"/>
+            </h:column>
+            <h:column>
+                <h:form>
+                    <h:commandButton value="Do to details" action="#{bookController.selectBook(book.getId())}"/>
+                </h:form>
+            </h:column>
+
+        </h:dataTable>
 
     </ui:define>
 
