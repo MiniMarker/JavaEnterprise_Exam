@@ -9,16 +9,24 @@ import org.openqa.selenium.WebDriver;
  */
 public class MessagesPO extends LayoutPO {
 	
-	public MessagesPO(WebDriver driver, String host, int port) {
-		super(driver, host, port);
-	}
-	
 	public MessagesPO(PageObject other) {
 		super(other);
 	}
 	
 	@Override
 	public boolean isOnPage() {
-		return false;
+		return getDriver().getTitle().contains("Messages");
 	}
+	
+	public void sendResponse(String message, long rowInColumn){
+		setText("inboxTable:"+ rowInColumn +":responseForm:responseText", message);
+		clickAndWait("inboxTable:"+ rowInColumn +":responseForm:sendResponseButton");
+	}
+	
+	public void sendMessage(String username, String message){
+		setText("sendMessageForm:sendMessageUsername", username);
+		setText("sendMessageForm:sendMessageText", message);
+		clickAndWait("sendMessageForm:sendMessageButton");
+	}
+	
 }

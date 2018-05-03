@@ -8,8 +8,10 @@
 This repo contains my solution for our 48-hour home exam.
 
 **EXTRA**
-
+* I added an extra class th the project called "BookPost", this is a List of books for sale an extends the book class.
 * Ability to add book if the book you are selling is not on the list
+* Ability to send independent chat messages to a user
+* Ability to mark a message as read (when you reply to a message, this message will be marked as read)
 * The project is depoyed on Travis CI
 
 **Project Structure**

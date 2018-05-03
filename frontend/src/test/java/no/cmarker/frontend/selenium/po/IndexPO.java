@@ -1,5 +1,6 @@
 package no.cmarker.frontend.selenium.po;
 
+import no.cmarker.backend.entities.Message;
 import no.cmarker.backend.services.BookService;
 import no.cmarker.frontend.selenium.PageObject;
 import org.openqa.selenium.By;
@@ -55,6 +56,15 @@ public class IndexPO extends LayoutPO {
 		assertTrue(bookDetailsPO.isOnPage());
 		
 		return bookDetailsPO;
+	}
+	
+	public MessagesPO goToMessages(){
+		
+		clickAndWait("linkToMessagePage");
+		MessagesPO messagesPO = new MessagesPO(this);
+		assertTrue(messagesPO.isOnPage());
+		
+		return messagesPO;
 	}
 	
 	public void createBook(String title, String author, String course){

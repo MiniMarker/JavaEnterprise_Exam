@@ -6,6 +6,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /**
  * @author Christian Marker on 02/05/2018 at 12:35.
@@ -33,7 +34,7 @@ public class Message {
 	private String message;
 	
 	@NotNull
-	private LocalDate date;
+	private LocalDateTime date;
 	
 	public Long getId() {
 		return id;
@@ -67,11 +68,11 @@ public class Message {
 		this.message = message;
 	}
 	
-	public LocalDate getDate() {
+	public LocalDateTime getDate() {
 		return date;
 	}
 	
-	public void setDate(LocalDate date) {
+	public void setDate(LocalDateTime date) {
 		this.date = date;
 	}
 	

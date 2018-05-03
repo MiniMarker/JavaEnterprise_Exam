@@ -34,7 +34,7 @@
         <sec:authenticated>
             <h3>Add new book</h3>
             <h:form id="createBookForm">
-                <table>
+                <table border="1">
                     <tr>
                         <th>Title</th>
                         <th>Author</th>
@@ -83,7 +83,7 @@
             </h:column>
             <h:column>
                 <h:form prependId="false">
-                    <h:commandButton id="linkToBookDetails_${book.id}" value="Go to details" action="#{bookController.selectBook(book.id)}"/>
+                    <h:commandButton id="linkToBookDetails_${book.id}" value="Go to details" action="#{bookPostController.openBookDetailPage(book.id)}"/>
                 </h:form>
             </h:column>
             <sec:authenticated>

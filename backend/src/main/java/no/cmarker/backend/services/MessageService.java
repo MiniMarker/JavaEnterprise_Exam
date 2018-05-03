@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /**
  * @author Christian Marker on 02/05/2018 at 13:15.
@@ -37,7 +38,7 @@ public class MessageService {
 		messageToBeSent.setReciever(receiver);
 		messageToBeSent.setMessage(message);
 		messageToBeSent.setRead(false);
-		messageToBeSent.setDate(LocalDate.now());
+		messageToBeSent.setDate(LocalDateTime.now());
 		
 		em.persist(messageToBeSent);
 		

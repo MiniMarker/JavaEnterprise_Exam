@@ -1,6 +1,6 @@
 /Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/exam_marchr16/frontend/src/test/java/no/cmarker/frontend/selenium/PageObject.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/exam_marchr16/frontend/src/test/java/no/cmarker/frontend/selenium/po/MessagesPO.java
 /Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/exam_marchr16/frontend/src/test/java/no/cmarker/frontend/selenium/po/LogInPO.java
-/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/exam_marchr16/frontend/src/test/java/no/cmarker/frontend/selenium/po/PageTwoPO.java
 /Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/exam_marchr16/frontend/src/test/java/no/cmarker/frontend/LocalApplicationRunner.java
 /Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/exam_marchr16/frontend/src/test/java/no/cmarker/frontend/selenium/SeleniumLocalIT.java
 /Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/exam_marchr16/frontend/src/test/java/no/cmarker/frontend/selenium/po/SignUpPO.java

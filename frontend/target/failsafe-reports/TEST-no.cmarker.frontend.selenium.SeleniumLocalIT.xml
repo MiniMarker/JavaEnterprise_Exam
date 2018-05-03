@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="no.cmarker.frontend.selenium.SeleniumLocalIT" time="46.473" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="no.cmarker.frontend.selenium.SeleniumLocalIT" time="71.687" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib"/>
@@ -64,12 +64,14 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testRegistrerSelling" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="7.051"/>
-  <testcase name="testCreateUserWithExistingUsername" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="2.16"/>
-  <testcase name="goToStartPage" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="0.534"/>
-  <testcase name="testDefaultBooks" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="0.472"/>
-  <testcase name="testCreateBook" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="2.351"/>
-  <testcase name="testCreateUser" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="1.853"/>
-  <testcase name="testBookDetails" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="3.758"/>
-  <testcase name="logInUser" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="1.313"/>
+  <testcase name="testSendMessageFromMessagePage" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="7.873"/>
+  <testcase name="testRegistrerSelling" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="5.347"/>
+  <testcase name="testCreateUserWithExistingUsername" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="1.746"/>
+  <testcase name="goToStartPage" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="0.403"/>
+  <testcase name="testMessages" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="12.852"/>
+  <testcase name="testDefaultBooks" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="0.298"/>
+  <testcase name="testCreateBook" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="1.426"/>
+  <testcase name="testCreateUser" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="1.01"/>
+  <testcase name="testBookDetails" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="1.998"/>
+  <testcase name="logInUser" classname="no.cmarker.frontend.selenium.SeleniumLocalIT" time="0.874"/>
 </testsuite>

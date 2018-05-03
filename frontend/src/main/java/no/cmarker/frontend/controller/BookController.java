@@ -1,7 +1,6 @@
 package no.cmarker.frontend.controller;
 
 import no.cmarker.backend.entities.Book;
-import no.cmarker.backend.services.BookPostService;
 import no.cmarker.backend.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -20,8 +19,6 @@ public class BookController {
 	public String addBookAuthor;
 	public String addBookCourse;
 	
-	private long selectedBookId;
-	
 	@Autowired
 	private BookService bookService;
 	
@@ -36,17 +33,6 @@ public class BookController {
 	public void createBook(){
 		bookService.createBook(addBookTitle, addBookAuthor, addBookCourse);
 	}
-	
-	public Book getBook(String id){
-		System.out.println(bookService.getBook(Long.parseLong(id)).getTitle());
-		return bookService.getBook(Long.parseLong(id));
-	}
-	
-	
-	public String selectBook(long bookId){
-		return "book_details.xhtml?book=" + bookId + "&faces-redirect=true";
-	}
-	
 	
 	public String getAddBookTitle() {
 		return addBookTitle;
@@ -70,13 +56,5 @@ public class BookController {
 	
 	public void setAddBookCourse(String addBookCourse) {
 		this.addBookCourse = addBookCourse;
-	}
-	
-	public long getSelectedBookId() {
-		return selectedBookId;
-	}
-	
-	public void setSelectedBookId(long selectedBookId) {
-		this.selectedBookId = selectedBookId;
 	}
 }

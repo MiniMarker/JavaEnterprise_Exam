@@ -1,9 +1,7 @@
 package no.cmarker.frontend.controller;
 
-import no.cmarker.backend.entities.Book;
 import no.cmarker.backend.entities.BookPost;
 import no.cmarker.backend.services.BookPostService;
-import no.cmarker.backend.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -27,11 +25,14 @@ public class BookPostController {
 	@Autowired
 	private BookPostService bookPostService;
 	
-	@Autowired
-	private BookService bookService;
-	
 	private Map<Long, Boolean> bookPostMap = new HashMap<>();
 	
+	private long selectedBookId;
+	
+	public String openBookDetailPage(long selectedBookId){
+		this.selectedBookId = selectedBookId;
+		return "book_details.xhtml?faces-redirect=true";
+	}
 	
 	private void createBookPost(long bookId) {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
@@ -52,7 +53,6 @@ public class BookPostController {
 			}
 		}
 		
-		
 		if (bookPostLoggedInUser.size() > 0) {
 			bookPostLoggedInUser.forEach((element) -> element.setForSale(false));
 		}
@@ -70,8 +70,13 @@ public class BookPostController {
 		}
 	}
 	
-	public List<BookPost> getAllForSaleBookPosts(long id) {
-		return bookPostService.getAllForSaleBookPostsForPost(id);
+	public List<BookPost> getAllForSaleBookPosts() {
+		
+		return bookPostService.getAllForSaleBookPostsForPost(selectedBookId);
+	}
+	
+	public List<BookPost> getAllForSaleBookPosts(long bookId) {
+		return bookPostService.getAllForSaleBookPostsForPost(bookId);
 	}
 	
 	public Map<Long, Boolean> getBookPostMap() {

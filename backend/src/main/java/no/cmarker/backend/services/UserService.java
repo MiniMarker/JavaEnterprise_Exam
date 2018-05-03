@@ -49,7 +49,7 @@ public class UserService {
 	
 	public List<Message> getInbox(String username){
 		
-		TypedQuery<Message> query = em.createQuery("SELECT m FROM Message m WHERE m.reciever.username = ?1 ORDER BY m.date", Message.class);
+		TypedQuery<Message> query = em.createQuery("SELECT m FROM Message m WHERE m.reciever.username = ?1 ORDER BY m.date DESC", Message.class);
 		query.setParameter(1, username);
 		
 		return query.getResultList();
@@ -57,10 +57,9 @@ public class UserService {
 	
 	public List<Message> getOutbox(String username){
 		
-		TypedQuery<Message> query = em.createQuery("SELECT m FROM Message m WHERE m.sender.username = ?1 ORDER BY m.date", Message.class);
+		TypedQuery<Message> query = em.createQuery("SELECT m FROM Message m WHERE m.sender.username = ?1 ORDER BY m.date DESC", Message.class);
 		query.setParameter(1, username);
 		
 		return query.getResultList();
 	}
-	
 }

@@ -22,42 +22,40 @@
         <sec:authenticated>
 
             <h2>Send a message</h2>
-            <h:form>
-                <h:form>
-                    <table>
-                        <tr>
-                            <th>To user</th>
-                            <th>Message</th>
-                            <th>Action</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h:inputText value="#{messageController.recieverUsername}"/>
-                            </td>
-                            <td>
-                                <h:inputText value="#{messageController.messageText}"/>
-                            </td>
-                            <td>
-                                <h:commandButton value="Send" action="#{messageController.sendMessageFromMessagesPage()}"/>
-                            </td>
-                        </tr>
-                    </table>
-                </h:form>
+            <h:form id="sendMessageForm">
+                <h:outputLabel id="errorMessage" value="Could not find user: ${messageController.recieverUsername}"
+                               rendered="${!empty param['error']}"/>
+                <table border="1">
+                    <tr>
+                        <th>To user</th>
+                        <th>Message</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h:inputText id="sendMessageUsername" value="#{messageController.recieverUsername}"/>
+                        </td>
+                        <td>
+                            <h:inputText id="sendMessageText" value="#{messageController.messageText}"/>
+                        </td>
+                        <td>
+                            <h:commandButton id="sendMessageButton" value="Send"
+                                             action="#{messageController.sendMessageFromMessagesPage()}"/>
+                        </td>
+                    </tr>
+                </table>
             </h:form>
 
             <h2>Inbox</h2>
-            <h:dataTable var="message" value="#{userInfoController.inbox}">
+            <h:dataTable id="inboxTable" var="message" value="#{userInfoController.inbox}" border="1">
                 <h:column>
                     <f:facet name="header">From</f:facet>
-                    <h:outputLabel value="${message.sender.firstname} ${message.sender.lastname} - ${message.sender.username}"/>
+                    <h:outputLabel class="inboxList"
+                                   value="${message.sender.firstname} ${message.sender.lastname} - ${message.sender.username}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">Message</f:facet>
                     <h:outputLabel value="${message.message}"/>
-                </h:column>
-                <h:column>
-                    <f:facet name="header">Date</f:facet>
-                    <h:outputLabel value="${message.date}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">Read</f:facet>
@@ -65,25 +63,31 @@
                 </h:column>
                 <h:column>
                     <h:form>
+                        <f:facet name="header">Action</f:facet>
                         <h:commandButton value="Mark as read"
                                          action="#{messageController.markMessageAsRead(message.id)}"/>
+                    </h:form>
+                </h:column>
+                <h:column>
+                    <h:form id="responseForm">
+                        <f:facet name="header">Respond</f:facet>
+                        <h:inputText id="responseText" value="#{messageController.respondMessageText}"/>
+                        <h:commandButton id="sendResponseButton" value="Send"
+                                         action="#{messageController.respondToMessage(message.sender.username, message.id)}"/>
                     </h:form>
                 </h:column>
             </h:dataTable>
 
             <h2>Outbox</h2>
-            <h:dataTable var="message" value="#{userInfoController.outbox}">
+            <h:dataTable var="message" value="#{userInfoController.outbox}" border="1">
                 <h:column>
                     <f:facet name="header">To</f:facet>
-                    <h:outputLabel value="${message.reciever.firstname} ${message.reciever.lastname} - ${message.reciever.username}"/>
+                    <h:outputLabel class="outboxList"
+                                   value="${message.reciever.firstname} ${message.reciever.lastname} - ${message.reciever.username}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">Message</f:facet>
                     <h:outputLabel value="${message.message}"/>
-                </h:column>
-                <h:column>
-                    <f:facet name="header">Date</f:facet>
-                    <h:outputLabel value="${message.date}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">Read</f:facet>
