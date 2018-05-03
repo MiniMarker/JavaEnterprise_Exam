@@ -1,8 +1,10 @@
+no/cmarker/frontend/selenium/po/BookDetailsPO.class
 no/cmarker/frontend/selenium/SeleniumDriverHandler.class
 no/cmarker/frontend/selenium/po/IndexPO.class
 no/cmarker/frontend/selenium/po/LayoutPO.class
 no/cmarker/frontend/LocalApplicationRunner.class
 no/cmarker/frontend/selenium/PageObject.class
 no/cmarker/frontend/selenium/SeleniumLocalIT.class
+no/cmarker/frontend/selenium/po/LogInPO.class
 no/cmarker/frontend/selenium/po/PageTwoPO.class
 no/cmarker/frontend/selenium/po/SignUpPO.class

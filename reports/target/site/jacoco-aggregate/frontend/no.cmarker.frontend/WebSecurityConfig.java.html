@@ -39,7 +39,7 @@ import javax.sql.DataSource;
 <span class="fc" id="L39">			http.authorizeRequests()</span>
 <span class="fc" id="L40">					.antMatchers(&quot;/&quot;, &quot;/index.xhtml&quot;, &quot;/signup.xhtml&quot;, &quot;/book_details.xhtml/**&quot;, &quot;/assets/**&quot;).permitAll()</span>
 <span class="fc" id="L41">					.antMatchers(&quot;/javax.faces.resource/**&quot;).permitAll()</span>
-<span class="fc" id="L42">					.antMatchers( &quot;/pagetwo.xhtml&quot;).authenticated()</span>
+<span class="fc" id="L42">					.antMatchers( &quot;/messages.xhtml/**&quot;).authenticated()</span>
 <span class="fc" id="L43">					.anyRequest().authenticated()</span>
 <span class="fc" id="L44">					.and()</span>
 <span class="fc" id="L45">					.formLogin()</span>

@@ -4,6 +4,8 @@ import no.cmarker.backend.services.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.faces.bean.SessionScoped;
+import javax.faces.component.UIInput;
+import javax.faces.event.ValueChangeEvent;
 import javax.inject.Named;
 
 /**
@@ -24,6 +26,7 @@ public class MessageController {
 	
 	private boolean showInputField = false;
 	private String messageText;
+	private String recieverUsername;
 	
 	public String getMessageText() {
 		return messageText;
@@ -33,10 +36,14 @@ public class MessageController {
 		this.messageText = messageText;
 	}
 	
-	public String sendMessage(String recieverUsername){
+	public void sendMessage(String recieverUsername){
 		String loggedInUsername = userInfoController.getUserName();
 		messageService.createMessage(loggedInUsername, recieverUsername, messageText);
-		return "?faces-redirect=true&amp;includeViewParams=true";
+	}
+	
+	public void sendMessageFromMessagesPage(){
+		String loggedInUsername = userInfoController.getUserName();
+		messageService.createMessage(loggedInUsername, getRecieverUsername(), messageText);
 	}
 	
 	public void markMessageAsRead(long id){
@@ -49,5 +56,13 @@ public class MessageController {
 	
 	public void setShowInputField(boolean showInputField) {
 		this.showInputField = showInputField;
+	}
+	
+	public String getRecieverUsername() {
+		return recieverUsername;
+	}
+	
+	public void setRecieverUsername(String recieverUsername) {
+		this.recieverUsername = recieverUsername;
 	}
 }

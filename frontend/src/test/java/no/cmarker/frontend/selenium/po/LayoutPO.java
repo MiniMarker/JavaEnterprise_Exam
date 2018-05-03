@@ -75,4 +75,10 @@ public abstract class LayoutPO extends PageObject {
 		return elements.get(0);
 	}
 	
+	public int getRowsInTable(String className){
+		List<WebElement> elements = driver.findElements(
+				By.xpath("//label[@class='"+ className +"']"));
+		return elements.size();
+	}
+	
 }

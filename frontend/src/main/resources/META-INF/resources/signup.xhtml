@@ -26,6 +26,10 @@
                 <h:inputText id="username" value="#{signUpController.username}" class="login"/><br/>
                 <h:outputText value="Password: "/>
                 <h:inputSecret id="password" value="#{signUpController.password}" class="login"/><br/>
+                <h:outputText value="Fistname: "/>
+                <h:inputText id="firstname" value="#{signUpController.firstname}" class="login"/><br/>
+                <h:outputText value="Lastname: "/>
+                <h:inputText id="lastname" value="#{signUpController.lastname}" class="login"/><br/>
 
                 <h:commandButton id="submit" value="Sign Up" action="#{signUpController.signUpUser}" class="gameBtn"/>
             </div>

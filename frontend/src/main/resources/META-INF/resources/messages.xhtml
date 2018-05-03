@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:sec="http://www.springframework.org/security/tags"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:o="http://omnifaces.org/ui">
+
+<ui:composition template="layout.xhtml">
+
+
+    <ui:define name="title">Messages</ui:define>
+
+    <ui:define name="content">
+
+        <sec:anonymous>
+            <p><b>Log in see your inbox and sent messages</b></p>
+        </sec:anonymous>
+
+        <sec:authenticated>
+
+            <h2>Send a message</h2>
+            <h:form>
+                <h:form>
+                    <table>
+                        <tr>
+                            <th>To user</th>
+                            <th>Message</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h:inputText value="#{messageController.recieverUsername}"/>
+                            </td>
+                            <td>
+                                <h:inputText value="#{messageController.messageText}"/>
+                            </td>
+                            <td>
+                                <h:commandButton value="Send" action="#{messageController.sendMessageFromMessagesPage()}"/>
+                            </td>
+                        </tr>
+                    </table>
+                </h:form>
+            </h:form>
+
+            <h2>Inbox</h2>
+            <h:dataTable var="message" value="#{userInfoController.inbox}">
+                <h:column>
+                    <f:facet name="header">From</f:facet>
+                    <h:outputLabel value="${message.sender.firstname} ${message.sender.lastname} - ${message.sender.username}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Message</f:facet>
+                    <h:outputLabel value="${message.message}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Date</f:facet>
+                    <h:outputLabel value="${message.date}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Read</f:facet>
+                    <h:outputLabel value="${message.read}"/>
+                </h:column>
+                <h:column>
+                    <h:form>
+                        <h:commandButton value="Mark as read"
+                                         action="#{messageController.markMessageAsRead(message.id)}"/>
+                    </h:form>
+                </h:column>
+            </h:dataTable>
+
+            <h2>Outbox</h2>
+            <h:dataTable var="message" value="#{userInfoController.outbox}">
+                <h:column>
+                    <f:facet name="header">To</f:facet>
+                    <h:outputLabel value="${message.reciever.firstname} ${message.reciever.lastname} - ${message.reciever.username}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Message</f:facet>
+                    <h:outputLabel value="${message.message}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Date</f:facet>
+                    <h:outputLabel value="${message.date}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Read</f:facet>
+                    <h:outputLabel value="${message.read}"/>
+                </h:column>
+            </h:dataTable>
+        </sec:authenticated>
+
+
+    </ui:define>
+</ui:composition>
+</html>

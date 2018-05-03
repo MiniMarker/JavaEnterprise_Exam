@@ -1,20 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: no.cmarker.frontend.selenium.SeleniumLocalIT
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 23.849 sec <<< FAILURE! - in no.cmarker.frontend.selenium.SeleniumLocalIT
-goToStartPage(no.cmarker.frontend.selenium.SeleniumLocalIT)  Time elapsed: 1.803 sec  <<< FAILURE!
-java.lang.AssertionError: Failed to start from Home Page
-	at no.cmarker.frontend.selenium.SeleniumLocalIT.initTest(SeleniumLocalIT.java:62)
-
-goToStartPage(no.cmarker.frontend.selenium.SeleniumLocalIT)  Time elapsed: 0.443 sec  <<< FAILURE!
-java.lang.AssertionError: Failed to start from Home Page
-	at no.cmarker.frontend.selenium.SeleniumLocalIT.initTest(SeleniumLocalIT.java:62)
-
-goToStartPage(no.cmarker.frontend.selenium.SeleniumLocalIT)  Time elapsed: 0.475 sec  <<< FAILURE!
-java.lang.AssertionError: Failed to start from Home Page
-	at no.cmarker.frontend.selenium.SeleniumLocalIT.initTest(SeleniumLocalIT.java:62)
-
-goToStartPage(no.cmarker.frontend.selenium.SeleniumLocalIT)  Time elapsed: 0.408 sec  <<< FAILURE!
-java.lang.AssertionError: Failed to start from Home Page
-	at no.cmarker.frontend.selenium.SeleniumLocalIT.initTest(SeleniumLocalIT.java:62)
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.473 sec - in no.cmarker.frontend.selenium.SeleniumLocalIT

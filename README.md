@@ -7,6 +7,11 @@
 
 This repo contains my solution for our 48-hour home exam.
 
+**EXTRA**
+
+* Ability to add book if the book you are selling is not on the list
+* The project is depoyed on Travis CI
+
 **Project Structure**
 
 The project contains 3 submodules

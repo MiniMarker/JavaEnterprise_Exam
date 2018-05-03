@@ -47,18 +47,17 @@ public class UserService {
 		return true;
 	}
 	
-	public List<Message> getInbox(String username, boolean onlyNotRead){
+	public List<Message> getInbox(String username){
 		
-		TypedQuery<Message> query = em.createQuery("SELECT m FROM Message m WHERE m.reciever.username = ?1 AND m.read = ?2", Message.class);
+		TypedQuery<Message> query = em.createQuery("SELECT m FROM Message m WHERE m.reciever.username = ?1 ORDER BY m.date", Message.class);
 		query.setParameter(1, username);
-		query.setParameter(2, onlyNotRead);
 		
 		return query.getResultList();
 	}
 	
 	public List<Message> getOutbox(String username){
 		
-		TypedQuery<Message> query = em.createQuery("SELECT m FROM Message m WHERE m.sender.username = ?1", Message.class);
+		TypedQuery<Message> query = em.createQuery("SELECT m FROM Message m WHERE m.sender.username = ?1 ORDER BY m.date", Message.class);
 		query.setParameter(1, username);
 		
 		return query.getResultList();

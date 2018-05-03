@@ -21,14 +21,23 @@ public class UserInfoController {
 	@Autowired
 	private UserService userService;
 	
+	public String goToMessagePage(){
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		String username = auth.getName();
+		
+		return "messages.xhtml?user=" + username + "&faces-redirect=true";
+	}
+	
 	public String getUserName(){
 		return ((UserDetails)SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername();
 	}
 	
 	public List<Message> getInbox(){
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-		return userService.getInbox(auth.getName(), false);
+		return userService.getInbox(auth.getName());
 	}
+	
+	
 	
 	public List<Message> getOutbox(){
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();

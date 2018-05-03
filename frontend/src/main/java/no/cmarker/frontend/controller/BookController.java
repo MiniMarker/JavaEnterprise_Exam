@@ -29,6 +29,10 @@ public class BookController {
 		return bookService.getAllBooks();
 	}
 	
+	public List<Book> getAllForSaleBooks(){
+		return bookService.getAllBooks();
+	}
+	
 	public void createBook(){
 		bookService.createBook(addBookTitle, addBookAuthor, addBookCourse);
 	}

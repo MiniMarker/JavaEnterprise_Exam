@@ -50,6 +50,13 @@ public class BookPostService {
 		bookPost.setForSale(false);
 	}
 	
+	/*
+	public void markBookAsSellable(long id){
+		BookPost bookPost = getBookPost(id);
+		bookPost.setForSale(true);
+	}
+	
+	
 	public boolean deleteBookPost(long id){
 		BookPost bookPost = getBookPost(id);
 		
@@ -59,13 +66,21 @@ public class BookPostService {
 		}
 		return false;
 	}
+	*/
 	
 	public BookPost getBookPost(long id){
 		return em.find(BookPost.class, id);
 	}
 	
-	public List<BookPost> getAllBookPosts(long bookId){
+	public List<BookPost> getAllBookPostsForPost(long bookId){
 		TypedQuery<BookPost> query = em.createQuery("SELECT bp FROM BookPost bp WHERE bp.book.id = ?1", BookPost.class);
+		query.setParameter(1, bookId);
+		
+		return query.getResultList();
+	}
+	
+	public List<BookPost> getAllForSaleBookPostsForPost(long bookId){
+		TypedQuery<BookPost> query = em.createQuery("SELECT bp FROM BookPost bp WHERE bp.book.id = ?1 AND bp.forSale = true", BookPost.class);
 		query.setParameter(1, bookId);
 		
 		return query.getResultList();
@@ -77,8 +92,5 @@ public class BookPostService {
 		query.setParameter(1, username);
 		
 		return query.getResultList();
-		
-		
 	}
-	
 }

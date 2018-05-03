@@ -25,7 +25,7 @@ public class MessageServiceTest extends ServiceTestBase {
 	
 	
 	@Test
-	public void createMessage(){
+	public void testCreateMessage(){
 		
 		String senderUsername = "Bilbo";
 		String receiverUsername = "Samwise";
@@ -36,8 +36,28 @@ public class MessageServiceTest extends ServiceTestBase {
 		Long messageId = messageService.createMessage(senderUsername, receiverUsername, "DON'T PANIC!");
 		
 		assertNotNull(messageId);
-		assertEquals(1, userService.getInbox(receiverUsername, false).size());
+		assertEquals(1, userService.getInbox(receiverUsername).size());
 		assertEquals(1, userService.getOutbox(senderUsername).size());
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testCreateMessageWithWrongSender(){
+		
+		String receiverUsername = "Samwise";
+		userService.createUser(receiverUsername, "Mordor", "Samwise", "Gamgee");
+		
+		Long messageId = messageService.createMessage("Foo", receiverUsername, "DON'T PANIC!");
+		assertNull(messageId);
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testCreateMessageWithWrongReceiver(){
+		
+		String senderUsername = "Bilbo";
+		userService.createUser(senderUsername, "Shire", "Bilbo", "Baggins");
+		
+		Long messageId = messageService.createMessage(senderUsername, "Foo", "DON'T PANIC!");
+		assertNull(messageId);
 	}
 	
 	@Test

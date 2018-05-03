@@ -30,6 +30,7 @@
 
     <sec:authenticated>
         <p><h:outputText value="Hi! #{userInfoController.userName} "/></p>
+        <a id="linkToMessagePage" href="#{userInfoController.goToMessagePage()}" class="btn">Messages</a>
         <a id="logoutId" href="logout" class="btn">Log Out</a>
 
     </sec:authenticated>

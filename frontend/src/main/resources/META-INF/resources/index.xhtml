@@ -32,11 +32,30 @@
         </c:choose>
 
         <sec:authenticated>
-            <h:form>
-                <h:inputText value="#{bookController.addBookTitle}"/>
-                <h:inputText value="#{bookController.addBookAuthor}"/>
-                <h:inputText value="#{bookController.addBookCourse}"/>
-                <h:commandButton action="#{bookController.createBook}"/>
+            <h3>Add new book</h3>
+            <h:form id="createBookForm">
+                <table>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Course</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h:inputText id="bookTitle" value="#{bookController.addBookTitle}"/>
+                        </td>
+                        <td>
+                            <h:inputText id="bookAuthor" value="#{bookController.addBookAuthor}"/>
+                        </td>
+                        <td>
+                            <h:inputText id="bookCourse" value="#{bookController.addBookCourse}"/>
+                        </td>
+                        <td>
+                            <h:commandButton id="createBookButton" value="Add book" action="#{bookController.createBook}"/>
+                        </td>
+                    </tr>
+                </table>
             </h:form>
         </sec:authenticated>
 
@@ -45,7 +64,7 @@
         </sec:anonymous>
 
         <h2>Books</h2>
-        <h:dataTable var="book" value="${bookController.allBooks}" border="1" id="bookTable">
+        <h:dataTable var="book" value="${bookController.allForSaleBooks}" border="1" id="bookTable">
             <h:column>
                 <f:facet name="header">Title</f:facet>
                 <h:outputLabel class="bookTitle" value="${book.title}"/>
@@ -60,82 +79,28 @@
             </h:column>
             <h:column>
                 <f:facet name="header">Number of sellers</f:facet>
-                <h:outputLabel value="${book.bookPosts.size()}"/>
+                <h:outputLabel value="${bookPostController.getAllForSaleBookPosts(book.id).size()}"/>
             </h:column>
             <h:column>
-                <h:form>
-                    <h:commandButton value="Go to details" action="#{bookController.selectBook(book.getId())}"/>
+                <h:form prependId="false">
+                    <h:commandButton id="linkToBookDetails_${book.id}" value="Go to details" action="#{bookController.selectBook(book.id)}"/>
                 </h:form>
             </h:column>
-            <h:column>
-                <f:facet name="header">Are you selling this book?</f:facet>
-                <h:form>
-                    <!--
-                    TODO Fix tomorrow!
-                    <h:selectOneRadio value="#{bookPostController.bookPostMap[book.id]}"
-                                      onclick="submit()"
-                                      valueChangeListener="#{bookPostController.updateBookPost()}">
-                        <f:attribute name="bookPostId" value="#{book.id}" />
-                        <f:selectItem itemValue="true" itemLabel="Yes" />
-                        <f:selectItem itemValue="false" itemLabel="No" />
-                    </h:selectOneRadio>
-                    -->
-                </h:form>
-            </h:column>
-
-        </h:dataTable>
-
-        <sec:anonymous>
-            <p><b>Log in see your inbox and sent messages</b></p>
-        </sec:anonymous>
-
-        <sec:authenticated>
-            <h2>Inbox</h2>
-            <h:dataTable var="message" value="#{userInfoController.inbox}">
+            <sec:authenticated>
                 <h:column>
-                    <f:facet name="header">From</f:facet>
-                    <h:outputLabel value="${message.sender.firstname} ${message.sender.lastname}"/>
-                </h:column>
-                <h:column>
-                    <f:facet name="header">Message</f:facet>
-                    <h:outputLabel value="${message.message}"/>
-                </h:column>
-                <h:column>
-                    <f:facet name="header">Date</f:facet>
-                    <h:outputLabel value="${message.date}"/>
-                </h:column>
-                <h:column>
-                    <f:facet name="header">Read</f:facet>
-                    <h:outputLabel value="${message.read}"/>
-                </h:column>
-                <h:column>
-                    <h:form>
-                        <h:commandButton value="Mark as read"
-                                         action="#{messageController.markMessageAsRead(message.id)}"/>
+                    <f:facet name="header">Are you selling this book?</f:facet>
+                    <h:form id="sellBookForm">
+                        <h:selectOneRadio value="#{bookPostController.bookPostMap[book.id]}"
+                                          onclick="submit()"
+                                          valueChangeListener="#{bookPostController.updateBookPostListener}">
+                            <f:attribute name="bookId" value="#{book.id}"/>
+                            <f:selectItem id="yesCheckBox_${book.id}" itemValue="true" itemLabel="Yes"/>
+                            <f:selectItem id="noCheckbox_${book.id}" itemValue="false" itemLabel="No"/>
+                        </h:selectOneRadio>
                     </h:form>
                 </h:column>
-            </h:dataTable>
-
-            <h2>Sent</h2>
-            <h:dataTable var="message" value="#{userInfoController.outbox}">
-                <h:column>
-                    <f:facet name="header">To</f:facet>
-                    <h:outputLabel value="${message.reciever.firstname} ${message.reciever.lastname}"/>
-                </h:column>
-                <h:column>
-                    <f:facet name="header">Message</f:facet>
-                    <h:outputLabel value="${message.message}"/>
-                </h:column>
-                <h:column>
-                    <f:facet name="header">Date</f:facet>
-                    <h:outputLabel value="${message.date}"/>
-                </h:column>
-                <h:column>
-                    <f:facet name="header">Read</f:facet>
-                    <h:outputLabel value="${message.read}"/>
-                </h:column>
-            </h:dataTable>
-        </sec:authenticated>
+            </sec:authenticated>
+        </h:dataTable>
 
     </ui:define>
 </ui:composition>

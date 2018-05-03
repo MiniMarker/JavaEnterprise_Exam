@@ -41,7 +41,6 @@ public class DefaultDataInitializerService {
 		
 		Long bookPost1Id = attempt(() -> bookPostService.createBookPost(userName1, book1Id));
 		Long bookPost2Id = attempt(() -> bookPostService.createBookPost(userName2, book1Id));
-		Long bookPost3Id = attempt(() -> bookPostService.createBookPost(userName1, book2Id));
 		Long bookPost4Id = attempt(() -> bookPostService.createBookPost(userName2, book2Id));
 		
 		Long message1Id = attempt(() -> messageService.createMessage(userName2, userName1, "Hello!"));

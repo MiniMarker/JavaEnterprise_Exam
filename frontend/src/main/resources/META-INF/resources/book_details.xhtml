@@ -4,7 +4,8 @@
         xmlns:h="http://xmlns.jcp.org/jsf/html"
         xmlns:sec="http://www.springframework.org/security/tags"
         xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-        xmlns:c="http://xmlns.jcp.org/jsp/jstl/core" xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+        xmlns:f="http://java.sun.com/jsf/core"
         xmlns:o="http://omnifaces.org/ui">
 
 <ui:composition template="layout.xhtml">
@@ -15,35 +16,42 @@
     <ui:define name="content">
 
         <c:set var="book" value="#{bookController.getBook(param['book'])}"/>
-        <c:set var="bookPostList" value="#{bookPostController.getAllBookPosts(param['book'])}"/>
+        <c:set var="bookPostList" value="#{bookPostController.getAllForSaleBookPosts(param['book'])}"/>
 
-        <f:metadata>
-            <f:viewParam name="bookid" value="#{book.id}"/>
-        </f:metadata>
+        <c:choose>
+            <c:when test="#{empty param['book']}">
+                <h3>No book is selected</h3>
+            </c:when>
 
-        <h1>${book.title}</h1>
+            <c:otherwise>
 
-        <h:dataTable var="post" value="#{bookPostList}">
-            <h:column>
-                <f:facet name="header">Seller</f:facet>
-                <h:outputLabel value="${post.seller.firstname} ${post.seller.lastname}"/>
-            </h:column>
-            <h:column>
-                <f:facet name="header">For sale</f:facet>
-                <h:outputLabel value="${post.isForSale()}"/>
-            </h:column>
+                <h1 id="bookTitle">${book.title}</h1>
 
-            <sec:authenticated>
-                <h:column>
-                    <f:facet name="header">Contact seller</f:facet>
-                    <h:form includeViewParams="true">
-                        <h:inputText value="#{messageController.messageText}"/>
-                        <h:commandButton action="${messageController.sendMessage(post.seller.username)}" value="Send"/>
-                    </h:form>
-                </h:column>
-            </sec:authenticated>
+                <h:dataTable var="post" value="#{bookPostList}">
+                    <h:column>
+                        <f:facet name="header">Seller</f:facet>
+                        <h:outputLabel class="bookPostList" value="${post.seller.firstname} ${post.seller.lastname}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">For sale</f:facet>
+                        <h:outputLabel value="${post.isForSale()}"/>
+                    </h:column>
 
-        </h:dataTable>
+                    <sec:authenticated>
+                        <h:column>
+                            <f:facet name="header">Contact seller</f:facet>
+                            <h:form id="sendMessageForm">
+                                <h:inputText value="#{messageController.messageText}"/>
+                                <h:commandButton  action="${messageController.sendMessage(post.seller.username)}" process="sendMessageForm" value="Send"/>
+                            </h:form>
+                        </h:column>
+                    </sec:authenticated>
+
+                </h:dataTable>
+
+            </c:otherwise>
+        </c:choose>
+
     </ui:define>
 
 </ui:composition>
