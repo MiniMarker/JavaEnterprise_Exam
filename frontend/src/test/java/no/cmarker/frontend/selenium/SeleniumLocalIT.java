@@ -421,11 +421,7 @@ public class SeleniumLocalIT {
 		home.goToMessages();
 		
 		assertTrue(getReadStatusOutbox(1));
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		
 		getMarkMessageAsReadBtn(0).click();
 		assertTrue(getReadStatusInbox(1));
 		
