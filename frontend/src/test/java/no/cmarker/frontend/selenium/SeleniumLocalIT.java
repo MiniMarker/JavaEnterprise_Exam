@@ -1,7 +1,6 @@
 package no.cmarker.frontend.selenium;
 
 import no.cmarker.Application;
-import no.cmarker.backend.entities.Message;
 import no.cmarker.frontend.selenium.po.*;
 import org.junit.*;
 import org.junit.runner.RunWith;
@@ -384,7 +383,7 @@ public class SeleniumLocalIT {
 	}
 	
 	@Test
-	public void testSendMessageFromMessagePage(){
+	public void testSendMessageFromMessagePageAndMarkAsRead(){
 		home.toStartingPage();
 		
 		SignUpPO signUpPO = home.goToSignUpPage();
@@ -405,6 +404,49 @@ public class SeleniumLocalIT {
 		messagesPO.sendMessage(username1, "42");
 		
 		assertEquals(1, messagesPO.getRowsInTable("outboxList"));
+		
+		messagesPO.logOut();
+		LogInPO logInPO = home.goToLogInPage();
+		logInPO.logInUser(username1, password1);
+		
+		home.goToMessages();
+		assertEquals(1, messagesPO.getRowsInTable("inboxList"));
+		messagesPO.sendResponse("I got a towel..", 0);
+		//getMarkMessageAsReadBtn(0).click();
+		assertTrue(getReadStatusInbox(1));
+		
+		messagesPO.logOut();
+		home.goToLogInPage();
+		logInPO.logInUser(username2, password2);
+		home.goToMessages();
+		
+		assertTrue(getReadStatusOutbox(1));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		getMarkMessageAsReadBtn(0).click();
+		assertTrue(getReadStatusInbox(1));
+		
+	}
+	
+	private WebElement getMarkMessageAsReadBtn(int rowInTable){
+		return driver.findElement(By.id(
+				"inboxTable:"+ rowInTable +":markAsReadForm:markAsReadButton"
+		));
+	}
+	
+	private boolean getReadStatusOutbox(int rowInTable){
+		return Boolean.parseBoolean(driver.findElement(By.xpath(
+				"/html/body/table[2]/tbody/tr[" + rowInTable + "]/td[3]/label"
+		)).getText());
+	}
+	
+	private boolean getReadStatusInbox(int rowInTable){
+		return Boolean.parseBoolean(driver.findElement(By.xpath(
+				"/html/body/table[1]/tbody/tr["+ rowInTable +"]/td[3]/label"
+		)).getText());
 	}
 	
 	private String getSellerOfBook(int rowInTable){

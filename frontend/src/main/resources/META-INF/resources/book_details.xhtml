@@ -16,41 +16,49 @@
     <ui:define name="content">
 
         <c:set var="bookList" value="#{bookPostController.getAllForSaleBookPosts()}"/>
+        <c:set var="selectedBook" value="#{bookPostController.selectedBook}"/>
 
-        <h:dataTable id="bookPosts" var="post" value="#{bookList}">
-            <h:column>
-                <f:facet name="header">Seller</f:facet>
-                <h:outputLabel class="bookPostList" value="${post.seller.firstname} ${post.seller.lastname}"/>
-            </h:column>
-            <h:column>
-                <f:facet name="header">For sale</f:facet>
-                <h:outputLabel value="${post.isForSale()}"/>
-            </h:column>
 
-            <sec:authenticated>
-                <h:column>
-                    <f:facet name="header">Contact seller</f:facet>
-                    <h:form id="sendMessageForm">
-                        <h:inputText id="messageField" value="#{messageController.messageText}"/>
-                        <h:commandButton id="sendMessageButton" action="${messageController.sendMessage(post.seller.username)}" value="Send"/>
-                    </h:form>
-                </h:column>
-            </sec:authenticated>
-        </h:dataTable>
 
-        <!--
         <c:choose>
-            <c:when test="#{empty param['book']}">
+            <c:when test="${selectedBook == null}">
                 <h3>No book is selected</h3>
             </c:when>
 
             <c:otherwise>
 
+                <h1>${selectedBook.title}</h1>
+                <h3>${selectedBook.author}</h3>
+                <h4>${selectedBook.course}</h4>
+                <br/>
 
+                <h3>Sellers</h3>
+                <h:dataTable id="bookPosts" var="post" value="#{bookList}">
+                    <h:column>
+                        <f:facet name="header">Seller</f:facet>
+                        <h:outputLabel class="bookPostList" value="${post.seller.firstname} ${post.seller.lastname}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">For sale</f:facet>
+                        <h:outputLabel value="${post.isForSale()}"/>
+                    </h:column>
+
+                    <sec:authenticated>
+                        <h:column>
+                            <f:facet name="header">Contact seller</f:facet>
+                            <h:form id="sendMessageForm">
+                                <h:inputText id="messageField" value="#{messageController.messageText}"/>
+                                <h:commandButton id="sendMessageButton" action="${messageController.sendMessage(post.seller.username)}" value="Send"/>
+                            </h:form>
+                        </h:column>
+                    </sec:authenticated>
+                </h:dataTable>
 
             </c:otherwise>
         </c:choose>
-        -->
+
+
+
 
     </ui:define>
 

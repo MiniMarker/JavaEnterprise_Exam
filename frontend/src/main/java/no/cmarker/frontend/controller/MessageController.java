@@ -54,7 +54,6 @@ public class MessageController {
 		messageService.markMessageAsRead(id);
 	}
 	
-	
 	public String getRecieverUsername() {
 		return recieverUsername;
 	}

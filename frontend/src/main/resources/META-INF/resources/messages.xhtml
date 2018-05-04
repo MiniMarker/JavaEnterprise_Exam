@@ -62,9 +62,9 @@
                     <h:outputLabel value="${message.read}"/>
                 </h:column>
                 <h:column>
-                    <h:form>
+                    <h:form id="markAsReadForm">
                         <f:facet name="header">Action</f:facet>
-                        <h:commandButton value="Mark as read"
+                        <h:commandButton id="markAsReadButton" value="Mark as read"
                                          action="#{messageController.markMessageAsRead(message.id)}"/>
                     </h:form>
                 </h:column>

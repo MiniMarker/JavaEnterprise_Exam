@@ -1,7 +1,9 @@
 package no.cmarker.frontend.controller;
 
+import no.cmarker.backend.entities.Book;
 import no.cmarker.backend.entities.BookPost;
 import no.cmarker.backend.services.BookPostService;
+import no.cmarker.backend.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -25,6 +27,9 @@ public class BookPostController {
 	@Autowired
 	private BookPostService bookPostService;
 	
+	@Autowired
+	private BookService bookService;
+	
 	private Map<Long, Boolean> bookPostMap = new HashMap<>();
 	
 	private long selectedBookId;
@@ -38,6 +43,10 @@ public class BookPostController {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		
 		bookPostService.createBookPost(auth.getName(), bookId);
+	}
+	
+	public Book getSelectedBook(){
+		return bookService.getBook(selectedBookId);
 	}
 	
 	private void unmarkBookForSale(long bookId) {

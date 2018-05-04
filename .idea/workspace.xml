@@ -7,37 +7,31 @@
     <list default="true" id="e4b5287b-8765-4082-bb15-7dbe832efe49" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/db/migration/V1_0__Create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/db/migration/V1_0__Create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/backend-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/backend-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/db/migration/V1_0__Create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/db/migration/V1_0__Create.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/jacoco.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/site/jacoco/jacoco.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/test-classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/test-classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/assets/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/book_details.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/book_details.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/layout.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/layout.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/messages.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/messages.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/SeleniumLocalIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/SeleniumLocalIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/BookDetailsPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/BookDetailsPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/IndexPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/IndexPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/MessagesPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/MessagesPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/target/classes/META-INF/resources/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/META-INF/resources/assets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/target/classes/META-INF/resources/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/META-INF/resources/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/target/classes/META-INF/resources/layout.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/META-INF/resources/layout.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/test/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/test/resources/application-test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/failsafe-reports/TEST-no.cmarker.frontend.selenium.SeleniumLocalIT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/failsafe-reports/TEST-no.cmarker.frontend.selenium.SeleniumLocalIT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/target/failsafe-reports/failsafe-summary.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/failsafe-reports/failsafe-summary.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/failsafe-reports/no.cmarker.frontend.selenium.SeleniumLocalIT-output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/failsafe-reports/no.cmarker.frontend.selenium.SeleniumLocalIT-output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/failsafe-reports/no.cmarker.frontend.selenium.SeleniumLocalIT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/failsafe-reports/no.cmarker.frontend.selenium.SeleniumLocalIT.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/frontend-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/frontend-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/jacoco-it.exec" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/jacoco-it.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/site/jacoco-it/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/site/jacoco-it/jacoco-sessions.html" afterDir="false" />
@@ -45,14 +39,11 @@
       <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/site/jacoco-it/jacoco.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend.controller/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend.controller/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend.controller/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/site/jacoco-it/no.cmarker.frontend.controller/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/test-classes/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/test-classes/application-test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/target/test-classes/no/cmarker/frontend/selenium/SeleniumLocalIT.class" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/test-classes/no/cmarker/frontend/selenium/SeleniumLocalIT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/target/test-classes/no/cmarker/frontend/selenium/po/IndexPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/test-classes/no/cmarker/frontend/selenium/po/IndexPO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/target/dependency-check-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/target/dependency-check-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/dependency-check-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/reports-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/reports-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.entities/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.entities/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.entities/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/backend/no.cmarker.backend.entities/index.source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend.controller/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend.controller/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend.controller/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/target/site/jacoco-aggregate/frontend/no.cmarker.frontend.controller/index.source.html" afterDir="false" />
@@ -91,8 +82,8 @@
       <file leaf-file-name="SeleniumLocalIT.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/SeleniumLocalIT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="406" column="65" selection-start-line="406" selection-start-column="65" selection-end-line="406" selection-end-column="65" />
+            <state relative-caret-position="230">
+              <caret line="428" column="43" selection-start-line="428" selection-start-column="43" selection-end-line="428" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,32 +91,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java">
+      <file leaf-file-name="V1_0__Create.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/resources/db/migration/V1_0__Create.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#653#654#0" expanded="true" />
-                <element signature="e#692#693#0" expanded="true" />
-                <element signature="e#735#736#0" expanded="true" />
-                <element signature="e#774#775#0" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
-                <element signature="e#876#877#0" expanded="true" />
-                <element signature="e#1112#1113#0" expanded="true" />
-                <element signature="e#1138#1139#0" expanded="true" />
-                <element signature="e#1192#1193#0" expanded="true" />
-                <element signature="e#1231#1232#0" expanded="true" />
-                <element signature="e#1269#1270#0" expanded="true" />
-                <element signature="e#1296#1297#0" expanded="true" />
-                <element signature="e#1352#1353#0" expanded="true" />
-                <element signature="e#1393#1394#0" expanded="true" />
-                <element signature="e#1431#1432#0" expanded="true" />
-                <element signature="e#1458#1459#0" expanded="true" />
-                <element signature="e#1514#1515#0" expanded="true" />
-                <element signature="e#1555#1556#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="170" selection-start-line="2" selection-start-column="170" selection-end-line="2" selection-end-column="170" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/test/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -133,11 +112,20 @@
       <file leaf-file-name="BookPostController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
-              <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+            <state relative-caret-position="120">
+              <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application-test.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/test/resources/application-test.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -145,81 +133,29 @@
       <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
+            <state relative-caret-position="302">
               <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/MessageController.java">
+      <file leaf-file-name="messages.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/messages.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1845#1846#0" expanded="true" />
-                <element signature="e#1875#1876#0" expanded="true" />
-                <element signature="e#1937#1938#0" expanded="true" />
-                <element signature="e#1984#1985#0" expanded="true" />
-                <element signature="e#2027#2028#0" expanded="true" />
-                <element signature="e#2059#2060#0" expanded="true" />
-                <element signature="e#2125#2126#0" expanded="true" />
-                <element signature="e#2176#2177#0" expanded="true" />
-                <element signature="e#2212#2213#0" expanded="true" />
-                <element signature="e#2237#2238#0" expanded="true" />
-                <element signature="e#2289#2290#0" expanded="true" />
-                <element signature="e#2326#2327#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="350">
+              <caret line="76" column="29" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignUpController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/SignUpController.java">
+      <file leaf-file-name="MessagesPO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/MessagesPO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="75" column="33" lean-forward="true" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
-              <folding>
-                <element signature="e#2036#2037#0" expanded="true" />
-                <element signature="e#2059#2060#0" expanded="true" />
-                <element signature="e#2107#2108#0" expanded="true" />
-                <element signature="e#2140#2141#0" expanded="true" />
-                <element signature="e#2173#2174#0" expanded="true" />
-                <element signature="e#2195#2196#0" expanded="true" />
-                <element signature="e#2241#2242#0" expanded="true" />
-                <element signature="e#2272#2273#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserInfoController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/UserInfoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookDetailsPO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/BookDetailsPO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+            <state relative-caret-position="345">
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexPO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/IndexPO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -227,8 +163,20 @@
       <file leaf-file-name="book_details.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/book_details.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="30">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="360">
+                <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -255,7 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/pom.xml" />
         <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/SeleniumDriverHandler.java" />
         <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/PersonController.java" />
         <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/PageObject.java" />
@@ -263,8 +210,6 @@
         <option value="$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/PersonServiceTest.java" />
         <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/SeleniumTestBase.java" />
         <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/SeleniumTestBase.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/resources/db/migration/V1_0__Create.sql" />
-        <option value="$PROJECT_DIR$/backend/src/test/resources/application.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/PageTwoPO.java" />
@@ -298,14 +243,17 @@
         <option value="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/assets/style.css" />
         <option value="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/layout.xhtml" />
         <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/BookDetailsPO.java" />
-        <option value="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/messages.xhtml" />
         <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/MessagesPO.java" />
-        <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/SeleniumLocalIT.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/book_details.xhtml" />
+        <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java" />
         <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java" />
         <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/MessageController.java" />
-        <option value="$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java" />
+        <option value="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/messages.xhtml" />
+        <option value="$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/SeleniumLocalIT.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/resources/db/migration/V1_0__Create.sql" />
+        <option value="$PROJECT_DIR$/backend/src/test/resources/application.yml" />
+        <option value="$PROJECT_DIR$/frontend/src/test/resources/application-test.yml" />
+        <option value="$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/book_details.xhtml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -338,7 +286,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1680" />
     <option name="height" value="982" />
@@ -350,81 +298,42 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -432,95 +341,68 @@
               <item name="migration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cmarker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cmarker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cmarker" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -530,16 +412,16 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -547,33 +429,23 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -581,8 +453,8 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -591,8 +463,8 @@
               <item name="selenium" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -602,34 +474,34 @@
               <item name="po" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="reports" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="reports" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="reports" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exam_marchr16" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam_marchr16" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaEnterprise_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEnterprise_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="reports" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
@@ -639,6 +511,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -652,6 +526,7 @@
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Facets" />
@@ -677,7 +552,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -695,52 +570,6 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="SeleniumLocalIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="frontend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="no.cmarker.frontend.selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="no.cmarker.frontend.selenium" />
-      <option name="MAIN_CLASS_NAME" value="no.cmarker.frontend.selenium.SeleniumLocalIT" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="SeleniumLocalIT.testMessages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="frontend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="no.cmarker.frontend.selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="no.cmarker.frontend.selenium" />
-      <option name="MAIN_CLASS_NAME" value="no.cmarker.frontend.selenium.SeleniumLocalIT" />
-      <option name="METHOD_NAME" value="testMessages" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration name="SeleniumLocalIT.testSendMessageFromMessagePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="frontend" />
       <extension name="coverage">
@@ -754,6 +583,29 @@
       <option name="PACKAGE_NAME" value="no.cmarker.frontend.selenium" />
       <option name="MAIN_CLASS_NAME" value="no.cmarker.frontend.selenium.SeleniumLocalIT" />
       <option name="METHOD_NAME" value="testSendMessageFromMessagePage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SeleniumLocalIT.testSendMessageFromMessagePageAndMarkAsRead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="frontend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.cmarker.frontend.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="no.cmarker.frontend.selenium" />
+      <option name="MAIN_CLASS_NAME" value="no.cmarker.frontend.selenium.SeleniumLocalIT" />
+      <option name="METHOD_NAME" value="testSendMessageFromMessagePageAndMarkAsRead" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -780,6 +632,7 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaEnterprise_Exam/reports/target/site/jacoco-aggregate/index.html" />
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/exam_marchr16/reports/target/site/jacoco-aggregate/index.html" />
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="frontend" />
@@ -823,18 +676,18 @@
     <list>
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Application.LocalApplicationRunner" />
-      <item itemvalue="JUnit.SeleniumLocalIT.testMessages" />
-      <item itemvalue="JUnit.SeleniumLocalIT" />
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JUnit.SeleniumLocalIT.testSendMessageFromMessagePage" />
+      <item itemvalue="JavaScript Debug.index.html (1)" />
+      <item itemvalue="JUnit.SeleniumLocalIT.testSendMessageFromMessagePageAndMarkAsRead" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="Application.LocalApplicationRunner" />
+        <item itemvalue="JUnit.SeleniumLocalIT.testSendMessageFromMessagePageAndMarkAsRead" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JUnit.SeleniumLocalIT.testSendMessageFromMessagePage" />
-        <item itemvalue="JUnit.SeleniumLocalIT" />
-        <item itemvalue="JUnit.SeleniumLocalIT.testMessages" />
       </list>
     </recent_temporary>
   </component>
@@ -864,25 +717,13 @@
       <workItem from="1525254692766" duration="7000" />
       <workItem from="1525256805569" duration="13701000" />
       <workItem from="1525271186356" duration="82477000" />
+      <workItem from="1525417154108" duration="1133000" />
+      <workItem from="1525418374748" duration="84000" />
+      <workItem from="1525418622475" duration="4142000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SeleniumLocalIT_testMessages - 2018.05.03 at 22h 48m 28s.xml">
-      <configuration name="SeleniumLocalIT.testMessages" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SeleniumLocalIT_testMessages - 2018.05.03 at 23h 08m 29s.xml">
-      <configuration name="SeleniumLocalIT.testMessages" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SeleniumLocalIT_testMessages - 2018.05.03 at 23h 26m 06s.xml">
-      <configuration name="SeleniumLocalIT.testMessages" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SeleniumLocalIT_testMessages - 2018.05.03 at 23h 30m 26s.xml">
-      <configuration name="SeleniumLocalIT.testMessages" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SeleniumLocalIT - 2018.05.03 at 23h 33m 25s.xml">
-      <configuration name="SeleniumLocalIT" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SeleniumLocalIT - 2018.05.03 at 23h 36m 17s.xml">
       <configuration name="SeleniumLocalIT" configurationId="JUnit" />
     </history-entry>
@@ -898,9 +739,24 @@
     <history-entry file="SeleniumLocalIT_testSendMessageFromMessagePage - 2018.05.04 at 00h 00m 23s.xml">
       <configuration name="SeleniumLocalIT.testSendMessageFromMessagePage" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SeleniumLocalIT_testSendMessageFromMessagePageAndMarkAsRead - 2018.05.04 at 09h 45m 12s.xml">
+      <configuration name="SeleniumLocalIT.testSendMessageFromMessagePageAndMarkAsRead" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeleniumLocalIT_testSendMessageFromMessagePageAndMarkAsRead - 2018.05.04 at 09h 46m 58s.xml">
+      <configuration name="SeleniumLocalIT.testSendMessageFromMessagePageAndMarkAsRead" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeleniumLocalIT_testSendMessageFromMessagePageAndMarkAsRead - 2018.05.04 at 09h 51m 23s.xml">
+      <configuration name="SeleniumLocalIT.testSendMessageFromMessagePageAndMarkAsRead" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeleniumLocalIT_testSendMessageFromMessagePageAndMarkAsRead - 2018.05.04 at 09h 52m 39s.xml">
+      <configuration name="SeleniumLocalIT.testSendMessageFromMessagePageAndMarkAsRead" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeleniumLocalIT_testSendMessageFromMessagePageAndMarkAsRead - 2018.05.04 at 09h 53m 17s.xml">
+      <configuration name="SeleniumLocalIT.testSendMessageFromMessagePageAndMarkAsRead" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155402000" />
+    <option name="totallyTimeSpent" value="160761000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -912,7 +768,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="982" extended-state="6" />
+    <frame x="0" y="22" width="1680" height="982" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5012531" side_tool="true" weight="0.32946634" />
@@ -921,7 +778,6 @@
       <window_info anchor="right" id="CDI" order="8" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32946634" />
       <window_info anchor="right" id="Database" order="6" weight="0.32905984" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="JSF" order="5" />
@@ -934,22 +790,23 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33294663" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32946634" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33294663" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49874687" visible="true" weight="0.3085847" />
-      <window_info id="Persistence" order="5" sideWeight="0.5008696" side_tool="true" weight="0.1971917" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49913043" visible="true" weight="0.1971917" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49874687" visible="true" weight="0.3085847" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49913043" visible="true" weight="0.13553114" />
       <window_info anchor="right" id="Bean Validation" order="10" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32946634" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Persistence" order="5" sideWeight="0.5008696" side_tool="true" weight="0.1971917" />
+      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32946634" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32946634" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -964,6 +821,18 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="uml://SpringLocalModels/module=frontend">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -983,9 +852,7 @@
           <edges />
           <settings layout="Hierarchic Group" zoom="0.9" x="462.0" y="70.0" />
           <SelectedNodes />
-          <Categories>
-            <Category />
-          </Categories>
+          <Categories />
           <SCOPE>All</SCOPE>
         </state>
       </provider>
@@ -1060,62 +927,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/PageTwoPO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/db/migration/V1_0__Create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/test/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/PersonServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/UserServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/PersonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/PageTwoPO.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/Person.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/PersonServiceTest.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/test/java/no/cmarker/backend/services/UserServiceTest.java" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/PersonController.java" />
     <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/RedirectForwardHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1123,23 +939,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/pagetwo.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="16" lean-forward="true" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/pagetwo.xhtml" />
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/entities/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="43" column="61" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
-          <folding>
-            <element signature="e#1972#1973#0" expanded="true" />
-            <element signature="e#1991#1992#0" expanded="true" />
-            <element signature="e#2036#2037#0" expanded="true" />
-            <element signature="e#2061#2062#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1147,11 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1159,9 +958,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1197,14 +993,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="854">
           <caret line="80" column="45" lean-forward="true" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reports/target/site/jacoco-aggregate/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/no/cmarker/backend/services/DefaultDataInitializerService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1212,9 +1002,6 @@
           <caret line="36" column="49" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="49" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1227,13 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1241,10 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
-          <folding>
-            <element signature="e#1630#1631#0" expanded="true" />
-            <element signature="e#1681#1682#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1252,11 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1264,9 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1281,11 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1293,9 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1303,9 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1313,9 +1070,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="40" column="51" lean-forward="true" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1323,9 +1077,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1333,9 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1343,13 +1091,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
-            <element signature="e#1195#1196#0" expanded="true" />
-            <element signature="e#1240#1241#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1367,49 +1108,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/messages.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/MessagesPO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="195">
-            <caret line="13" column="83" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/UserInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
+        <state relative-caret-position="405">
           <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/BookDetailsPO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="210">
           <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1420,34 +1129,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/book_details.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/SeleniumLocalIT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="406" column="65" selection-start-line="406" selection-start-column="65" selection-end-line="406" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/SignUpController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="75" column="33" lean-forward="true" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+        <state relative-caret-position="900">
+          <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
           <folding>
             <element signature="e#2036#2037#0" expanded="true" />
             <element signature="e#2059#2060#0" expanded="true" />
@@ -1461,63 +1146,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/MessageController.java">
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        <state relative-caret-position="390">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1845#1846#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1937#1938#0" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
-            <element signature="e#2027#2028#0" expanded="true" />
-            <element signature="e#2059#2060#0" expanded="true" />
-            <element signature="e#2125#2126#0" expanded="true" />
-            <element signature="e#2176#2177#0" expanded="true" />
-            <element signature="e#2212#2213#0" expanded="true" />
-            <element signature="e#2237#2238#0" expanded="true" />
-            <element signature="e#2289#2290#0" expanded="true" />
-            <element signature="e#2326#2327#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/MessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/po/MessagesPO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/test/java/no/cmarker/frontend/selenium/SeleniumLocalIT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="428" column="43" selection-start-line="428" selection-start-column="43" selection-end-line="428" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/test/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/test/resources/application-test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+        <state relative-caret-position="120">
+          <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java">
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/messages.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-            <element signature="e#1138#1139#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-            <element signature="e#1431#1432#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1514#1515#0" expanded="true" />
-            <element signature="e#1555#1556#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="350">
+          <caret line="76" column="29" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/resources/META-INF/resources/book_details.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="360">
+            <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/db/migration/V1_0__Create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="170" selection-start-line="2" selection-start-column="170" selection-end-line="2" selection-end-column="170" />
         </state>
       </provider>
     </entry>
