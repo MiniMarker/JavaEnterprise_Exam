@@ -32,7 +32,7 @@ public class BookServiceTest extends ServiceTestBase {
 	private UserService userService;
 	
 	@Test
-	public void createBook(){
+	public void createBook() {
 		
 		String title = "Foo";
 		String author = "Bar";
@@ -43,7 +43,7 @@ public class BookServiceTest extends ServiceTestBase {
 	}
 	
 	@Test
-	public void testGetBook(){
+	public void testGetBook() {
 		
 		String title = "Foo";
 		String author = "Bar";
@@ -57,7 +57,7 @@ public class BookServiceTest extends ServiceTestBase {
 	}
 	
 	@Test
-	public void getAllBooks(){
+	public void getAllBooks() {
 		String title = "Foo";
 		String author = "Bar";
 		String course = "PG5100";
@@ -70,7 +70,7 @@ public class BookServiceTest extends ServiceTestBase {
 	}
 	
 	@Test
-	public void testGetAllBooksWithMoreThenOnePost(){
+	public void testGetAllBooksWithMoreThenOnePost() {
 		
 		userService.createUser("Hello", "World", "Samwise", "Baggins");
 		
@@ -87,7 +87,7 @@ public class BookServiceTest extends ServiceTestBase {
 	}
 	
 	@Test
-	public void deleteBook(){
+	public void deleteBook() {
 		String title = "Foo";
 		String author = "Bar";
 		String course = "PG5100";

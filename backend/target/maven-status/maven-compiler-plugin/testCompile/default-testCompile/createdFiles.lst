@@ -4,4 +4,3 @@ no/cmarker/backend/services/BookServiceTest.class
 no/cmarker/backend/StubApplication.class
 no/cmarker/backend/services/MessageServiceTest.class
 no/cmarker/backend/services/BookPostServiceTest.class
-no/cmarker/backend/entities/TmpEntityTest.class

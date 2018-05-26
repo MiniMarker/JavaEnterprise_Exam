@@ -21,73 +21,104 @@ public class BookPostService {
 	@Autowired
 	private EntityManager em;
 	
-	public Long createBookPost(String username, long bookId){
+	/**
+	 * Create a new BookPost of given book
+	 *
+	 * @param username username of the user who publishes the bookpost
+	 * @param bookId   id of the Book entity
+	 * @return generated id of the BookPost
+	 */
+	public Long createBookPost(String username, long bookId) {
 		
+		//check if given User exists
 		User user = em.find(User.class, username);
-		if (user == null){
+		if (user == null) {
 			throw new IllegalArgumentException("Could not fint user with username: " + username);
 		}
 		
+		//check if given Book exist
 		Book book = em.find(Book.class, bookId);
-		if (book == null){
+		if (book == null) {
 			throw new IllegalArgumentException("Could not fint book with id: " + bookId);
 		}
 		
+		//add data to entity
 		BookPost bookPost = new BookPost();
 		bookPost.setSeller(user);
 		bookPost.setBook(book);
 		bookPost.setForSale(true);
 		
+		//commit data to DB
 		em.persist(bookPost);
 		
+		//update foreign keys
 		book.getBookPosts().add(bookPost);
 		
 		return bookPost.getId();
 	}
 	
-	public void unmarkBookPostAsSellable(long id){
+	/**
+	 * Change the forSale value of the BookPost with given id
+	 *
+	 * @param id id of the bookpost to update
+	 */
+	public void unmarkBookPostAsSellable(long id) {
+		//get BookPost from DB
 		BookPost bookPost = getBookPost(id);
+		
+		//update values
 		bookPost.setForSale(false);
 	}
 	
-	/*
-	public void markBookAsSellable(long id){
-		BookPost bookPost = getBookPost(id);
-		bookPost.setForSale(true);
-	}
-	
-	
-	public boolean deleteBookPost(long id){
-		BookPost bookPost = getBookPost(id);
-		
-		if (bookPost != null){
-			em.remove(bookPost);
-			return true;
-		}
-		return false;
-	}
-	*/
-	
-	public BookPost getBookPost(long id){
+	/**
+	 * Get all info from DB about the BookPost with given id
+	 *
+	 * @param id id of BookPost to view
+	 * @return BookPost -object containing all data from DB
+	 */
+	public BookPost getBookPost(long id) {
 		return em.find(BookPost.class, id);
 	}
 	
-	public List<BookPost> getAllBookPostsForPost(long bookId){
+	/**
+	 * Get all BookPosts for a Book
+	 *
+	 * @param bookId id of Book
+	 * @return List of all BookPosts
+	 */
+	public List<BookPost> getAllBookPostsForPost(long bookId) {
+		
+		//generate query
 		TypedQuery<BookPost> query = em.createQuery("SELECT bp FROM BookPost bp WHERE bp.book.id = ?1", BookPost.class);
 		query.setParameter(1, bookId);
 		
 		return query.getResultList();
 	}
 	
-	public List<BookPost> getAllForSaleBookPostsForPost(long bookId){
+	/**
+	 * Get all BookPosts for a Book that is marked for sale
+	 *
+	 * @param bookId id of Book
+	 * @return List of all BookPosts
+	 */
+	public List<BookPost> getAllForSaleBookPostsForPost(long bookId) {
+		
+		//generate query
 		TypedQuery<BookPost> query = em.createQuery("SELECT bp FROM BookPost bp WHERE bp.book.id = ?1 AND bp.forSale = true", BookPost.class);
 		query.setParameter(1, bookId);
 		
 		return query.getResultList();
 	}
 	
-	public List<BookPost> getAllBookPostsForUser(String username){
+	/**
+	 * Get all BookPosts for a given user
+	 *
+	 * @param username username of user
+	 * @return List of all BookPosts
+	 */
+	public List<BookPost> getAllBookPostsForUser(String username) {
 		
+		//generate query
 		TypedQuery<BookPost> query = em.createQuery("SELECT bp FROM BookPost bp WHERE bp.seller.username = ?1", BookPost.class);
 		query.setParameter(1, username);
 		

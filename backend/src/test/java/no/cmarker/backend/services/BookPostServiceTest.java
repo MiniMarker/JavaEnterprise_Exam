@@ -57,6 +57,7 @@ public class BookPostServiceTest extends ServiceTestBase {
 		assertNull(bookPostId);
 	}
 	
+	
 	@Test(expected = IllegalArgumentException.class)
 	public void testCreateBookPostWithWrongBookId(){
 			String userName = "Bilbo";
@@ -112,31 +113,4 @@ public class BookPostServiceTest extends ServiceTestBase {
 		bookPostService.unmarkBookPostAsSellable(bookPostId);
 		assertFalse(bookPostService.getBookPost(bookPostId).isForSale());
 	}
-	/*
-	@Test
-	public void deleteBookPost(){
-		String userName = "Bilbo";
-		String bookTitle = "LOTR";
-		
-		String userName2 = "Douglas";
-		String bookTitle2 = "Dirk Gently";
-		
-		userService.createUser(userName, "Bar", "foo", "bar");
-		userService.createUser(userName2, "42", "Douglas", "Adams");
-		
-		Long bookId = bookService.createBook(bookTitle, "Tolkien", "PG5100");
-		Long bookId2 = bookService.createBook(bookTitle2, "Adams", "PG4200");
-		
-		Long bookPostId = bookPostService.createBookPost(userName, bookId);
-		Long bookPost2Id = bookPostService.createBookPost(userName2, bookId);
-		Long bookPost3Id = bookPostService.createBookPost(userName, bookId2);
-		Long bookPost4Id = bookPostService.createBookPost(userName2, bookId2);
-		
-		assertEquals(2, bookPostService.getAllBookPostsForPost(bookId).size());
-		
-		bookPostService.deleteBookPost(bookPostId);
-		
-		assertEquals(1, bookPostService.getAllBookPostsForPost(bookId).size());
-	}
-	*/
 }

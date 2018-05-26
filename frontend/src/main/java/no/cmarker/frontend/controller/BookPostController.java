@@ -34,39 +34,70 @@ public class BookPostController {
 	
 	private long selectedBookId;
 	
-	public String openBookDetailPage(long selectedBookId){
+	/**
+	 * Insted of using parameters in the URL i use a variable (selectedBookId) to let the user choose which book to view
+	 *
+	 * @param selectedBookId the selected books Id
+	 * @return a redirect to BookDetails page
+	 */
+	public String openBookDetailPage(long selectedBookId) {
 		this.selectedBookId = selectedBookId;
 		return "book_details.xhtml?faces-redirect=true";
 	}
 	
+	/**
+	 * Creates a BookPost for the authenticated user
+	 *
+	 * @param bookId id og the selected book
+	 */
 	private void createBookPost(long bookId) {
+		//get the authenticated user
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		
 		bookPostService.createBookPost(auth.getName(), bookId);
 	}
 	
-	public Book getSelectedBook(){
+	/**
+	 * Get all info about the selected Book
+	 *
+	 * @return Book-object
+	 */
+	public Book getSelectedBook() {
 		return bookService.getBook(selectedBookId);
 	}
 	
+	/**
+	 * Marks all the authenticated Users BookPost for the selected Book and setting all to not for sale
+	 *
+	 * @param bookId id of Book to update
+	 */
 	private void unmarkBookForSale(long bookId) {
+		//get the authenticated user
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		
 		List<BookPost> bookPostLoggedInUser = new ArrayList<>();
-		
 		List<BookPost> usersBookPostList = bookPostService.getAllBookPostsForUser(auth.getName());
 		
-		for (BookPost bookPost: usersBookPostList) {
-			if (bookPost.getBook().getId() == bookId){
+		//loops through all bookposts for a user and adds all bookposts for the selected book to a new ArrayList
+		for (BookPost bookPost : usersBookPostList) {
+			if (bookPost.getBook().getId() == bookId) {
 				bookPostLoggedInUser.add(bookPost);
 			}
 		}
 		
+		//loops through the authenticated Users BookPost for the selected Book and setting all to false
 		if (bookPostLoggedInUser.size() > 0) {
 			bookPostLoggedInUser.forEach((element) -> element.setForSale(false));
 		}
 	}
 	
+	/**
+	 * Method to handle the radio buttons in the table
+	 * If the user clicks yes, a BookPost for the selected Book is created
+	 * If the user clicks no, the BookPost is marked as not for sale.
+	 *
+	 * @param event event triggered by HTML code
+	 */
 	public void updateBookPostListener(ValueChangeEvent event) {
 		
 		boolean updatedValue = Boolean.parseBoolean(event.getNewValue().toString());
@@ -79,11 +110,21 @@ public class BookPostController {
 		}
 	}
 	
+	/**
+	 * Get all BookPosts for the selected Book that is marked as for sale
+	 *
+	 * @return List of BookPosts
+	 */
 	public List<BookPost> getAllForSaleBookPosts() {
-		
 		return bookPostService.getAllForSaleBookPostsForPost(selectedBookId);
 	}
 	
+	/**
+	 * Get all BookPosts for a given Book that is marked as for sale
+	 *
+	 * @param bookId id of Book to use
+	 * @return List of BookPosts
+	 */
 	public List<BookPost> getAllForSaleBookPosts(long bookId) {
 		return bookPostService.getAllForSaleBookPostsForPost(bookId);
 	}

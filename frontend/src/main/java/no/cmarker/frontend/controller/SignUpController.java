@@ -32,16 +32,21 @@ public class SignUpController {
 	private String firstname;
 	private String lastname;
 	
-	public String signUpUser(){
+	/**
+	 * Create a new user with info given by user
+	 *
+	 * @return a redirect based on the success of the user creation
+	 */
+	public String signUpUser() {
 		
 		boolean registered = false;
 		try {
 			registered = userService.createUser(username, password, firstname, lastname);
-		}catch (Exception e){
+		} catch (Exception e) {
 			//nothing to do
 		}
 		
-		if(registered){
+		if (registered) {
 			
 			UserDetails userDetails = userDetailsService.loadUserByUsername(username);
 			UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(

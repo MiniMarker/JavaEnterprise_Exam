@@ -22,15 +22,15 @@ public class BookController {
 	@Autowired
 	private BookService bookService;
 	
-	public List<Book> getAllBooks(){
+	public List<Book> getAllBooks() {
 		return bookService.getAllBooks();
 	}
 	
-	public List<Book> getAllForSaleBooks(){
+	public List<Book> getAllForSaleBooks() {
 		return bookService.getAllBooks();
 	}
 	
-	public void createBook(){
+	public void createBook() {
 		bookService.createBook(addBookTitle, addBookAuthor, addBookCourse);
 	}
 	

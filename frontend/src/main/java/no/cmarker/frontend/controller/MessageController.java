@@ -27,30 +27,46 @@ public class MessageController {
 	private String respondMessageText;
 	private String recieverUsername;
 	
-	public void sendMessage(String recieverUsername){
+	/**
+	 * Send a message to a given user
+	 *
+	 * @param recieverUsername username of reciever
+	 */
+	public void sendMessage(String recieverUsername) {
 		String loggedInUsername = userInfoController.getUserName();
 		messageService.createMessage(loggedInUsername, recieverUsername, messageText);
 		messageText = "";
 	}
 	
-	public void respondToMessage(String recieverUsername, long messageId){
+	/**
+	 * Sends a response to a given message.
+	 *
+	 * @param recieverUsername recievers username
+	 * @param messageId        Message's id
+	 */
+	public void respondToMessage(String recieverUsername, long messageId) {
 		String loggedInUsername = userInfoController.getUserName();
 		messageService.createMessage(loggedInUsername, recieverUsername, respondMessageText);
 		markMessageAsRead(messageId);
 		messageText = "";
 	}
 	
-	public String sendMessageFromMessagesPage(){
+	/**
+	 * Send a message to a User entered manually by the authenticated user
+	 *
+	 * @return appends a error message to the URL if the entered username doesnt exist in DB
+	 */
+	public String sendMessageFromMessagesPage() {
 		String loggedInUsername = userInfoController.getUserName();
-		try{
+		try {
 			messageService.createMessage(loggedInUsername, getRecieverUsername(), messageText);
 			return null;
-		} catch (Exception e){
+		} catch (Exception e) {
 			return "/messages.xhtml?faces-redirect=true&error=true";
 		}
 	}
 	
-	public void markMessageAsRead(long id){
+	public void markMessageAsRead(long id) {
 		messageService.markMessageAsRead(id);
 	}
 	

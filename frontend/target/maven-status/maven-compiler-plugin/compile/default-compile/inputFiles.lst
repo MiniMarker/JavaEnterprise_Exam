@@ -1,8 +1,8 @@
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/frontend/controller/MessageController.java
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/frontend/WebSecurityConfig.java
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/frontend/RedirectForwardHandler.java
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/Application.java
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/frontend/controller/UserInfoController.java
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/frontend/controller/SignUpController.java
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/frontend/controller/BookController.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/frontend/controller/SignUpController.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/frontend/controller/UserInfoController.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/frontend/RedirectForwardHandler.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/frontend/controller/MessageController.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/frontend/controller/BookPostController.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/Application.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/JavaEnterprise_Exam/frontend/src/main/java/no/cmarker/frontend/WebSecurityConfig.java

@@ -1,9 +1,7 @@
 package no.cmarker.backend.services;
 
-import no.cmarker.backend.entities.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
 import java.util.function.Supplier;
@@ -27,8 +25,11 @@ public class DefaultDataInitializerService {
 	@Autowired
 	private MessageService messageService;
 	
+	/**
+	 * This method is used for development cases to fill the DB with default data
+	 */
 	@PostConstruct
-	public void initialize(){
+	public void initialize() {
 		
 		String userName1 = "Frodo123";
 		String userName2 = "Bilbo90";

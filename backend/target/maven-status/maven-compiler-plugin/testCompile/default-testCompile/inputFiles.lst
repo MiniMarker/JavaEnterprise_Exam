@@ -1,7 +1,6 @@
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/backend/src/test/java/no/cmarker/backend/StubApplication.java
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/backend/src/test/java/no/cmarker/backend/services/BookServiceTest.java
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/backend/src/test/java/no/cmarker/backend/entities/TmpEntityTest.java
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/backend/src/test/java/no/cmarker/backend/services/ServiceTestBase.java
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/backend/src/test/java/no/cmarker/backend/services/ResetService.java
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/backend/src/test/java/no/cmarker/backend/services/BookPostServiceTest.java
-/Users/Christian/Desktop/Enterprise_exam/JavaEnterprise_Exam/backend/src/test/java/no/cmarker/backend/services/MessageServiceTest.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/JavaEnterprise_Exam/backend/src/test/java/no/cmarker/backend/services/MessageServiceTest.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/JavaEnterprise_Exam/backend/src/test/java/no/cmarker/backend/services/BookServiceTest.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/JavaEnterprise_Exam/backend/src/test/java/no/cmarker/backend/StubApplication.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/JavaEnterprise_Exam/backend/src/test/java/no/cmarker/backend/services/ServiceTestBase.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/JavaEnterprise_Exam/backend/src/test/java/no/cmarker/backend/services/ResetService.java
+/Users/Christian/Documents/Skole/Enterpriseprogrammering/Eksamen/JavaEnterprise_Exam/backend/src/test/java/no/cmarker/backend/services/BookPostServiceTest.java

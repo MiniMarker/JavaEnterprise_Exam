@@ -256,45 +256,6 @@ public class SeleniumLocalIT {
 		
 		assertEquals((currentRowsInTable + 1), home.getRowsInTable("bookTitle"));
 	}
-	/*
-	@Test
-	public void testGetOutbox(){
-		home.toStartingPage();
-		
-		LogInPO logInPO = home.goToLogInPage();
-		assertTrue(logInPO.isOnPage());
-		
-		String username = "Frodo123";
-		String password = "Shire";
-		
-		logInPO.logInUser(username, password);
-		
-		MessagesPO messagesPO = home.goToMessages();
-		assertTrue(messagesPO.isOnPage());
-		
-		int originalmessagesPO.getRowsInTable("outboxList")
-		
-		assertEquals(2, messagesPO.getRowsInTable("outboxList"));
-	}
-	
-	@Test
-	public void testGetInbox(){
-		home.toStartingPage();
-		
-		LogInPO logInPO = home.goToLogInPage();
-		assertTrue(logInPO.isOnPage());
-		
-		String username = "Frodo123";
-		String password = "Shire";
-		
-		logInPO.logInUser(username, password);
-		
-		MessagesPO messagesPO = home.goToMessages();
-		assertTrue(messagesPO.isOnPage());
-		
-		assertEquals(2, messagesPO.getRowsInTable("inboxList"));
-	}
-	*/
 	
 	@Test
 	public void testMessages(){
@@ -363,11 +324,6 @@ public class SeleniumLocalIT {
 		
 		//send message
 		//because the list is sorted correctly this message will be in place 0
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 		messagesPO.sendResponse("DON'T PANIC!", 0);
 		assertEquals((user2OriginalOutbox + 1), messagesPO.getRowsInTable("outboxList"));
 		
