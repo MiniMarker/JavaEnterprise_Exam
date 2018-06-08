@@ -80,6 +80,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			throw new RuntimeException(e);
 		}
 	}
-	
-	
 }
