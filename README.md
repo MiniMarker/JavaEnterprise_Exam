@@ -1,6 +1,6 @@
 # JavaEnterprise_Exam
 
-[![Build Status](https://travis-ci.com/MiniMarker/JavaEnterprise_Exam.svg?token=63V1sLhHsu3poeGMykFw&branch=master)](https://travis-ci.com/MiniMarker/JavaEnterprise_Exam)
+[![Build Status](https://travis-ci.org/MiniMarker/JavaEnterprise_Exam.svg?branch=master)](https://travis-ci.org/MiniMarker/JavaEnterprise_Exam)
 
 * Student: Christian Marker
 * Subject: PG5100-1 18V Enterpriseprogrammering 1
