@@ -13,3 +13,6 @@ notifications:
   email: true
 
 script: mvn clean verify  --quiet
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
