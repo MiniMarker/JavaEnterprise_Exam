@@ -1,6 +1,9 @@
 # JavaEnterprise_Exam
 
 [![Build Status](https://travis-ci.org/MiniMarker/JavaEnterprise_Exam.svg?branch=master)](https://travis-ci.org/MiniMarker/JavaEnterprise_Exam)
+[![codecov](https://codecov.io/gh/MiniMarker/JavaEnterprise_Exam/branch/master/graph/badge.svg)](https://codecov.io/gh/MiniMarker/JavaEnterprise_Exam) (no tests in frontend module)
+
+
 
 * Student: Christian Marker
 * Subject: PG5100-1 18V Enterpriseprogrammering 1
