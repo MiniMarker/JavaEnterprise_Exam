@@ -32,6 +32,10 @@ The project contains 3 submodules
     * JaCoCo coverage
     * OWASP check
 
+## Git commit video
+[![Watch the video](giphy.gif)](https://vimeo.com/312592723)
+<br/>https://vimeo.com/312592723
+
 ## How to run code
 
 1. Clone this repo
